@@ -8,9 +8,11 @@ import { isStopWord } from '../../src/data/stopWords';
 const API_BASE = 'https://en.wikipedia.org/api/rest_v1/page/html';
 const PAGEVIEWS_API = 'https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents';
 
+const USER_AGENT = 'UnredactBot/1.0 (https://unredact.com; contact@unredact.com)';
+
 async function fetchArticleHtml(title: string): Promise<string> {
   const url = `${API_BASE}/${encodeURIComponent(title)}`;
-  const response = await fetch(url);
+  const response = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
   if (!response.ok) throw new Error(`Failed to fetch article: ${response.statusText}`);
   return response.text();
 }
@@ -34,20 +36,16 @@ function cleanHtml(html: string): string {
 }
 
 function tokenizeAndTag(text: string) {
-  // Use compromise to get POS tags
   const doc = nlp(text);
-  
-  // The tokenize process needs to split words and punctuation carefully,
-  // preserving spaces as separate tokens.
   const regex = /([a-zA-Z0-9À-ÿ-]+)|([^a-zA-Z0-9À-ÿ-]+)/g;
   const rawMatches = [...text.matchAll(regex)];
   
-  const tokens = rawMatches.map(match => {
+  return rawMatches.map(match => {
     const val = match[0];
     const isWhitespace = /^\s+$/.test(val);
     const isPunctuation = !isWhitespace && /^[^a-zA-Z0-9À-ÿ]+$/.test(val);
     
-    let pos = 'NN'; // Default noun
+    let pos = 'NN';
     if (!isWhitespace && !isPunctuation) {
       const matchDoc = doc.match(val);
       if (matchDoc.has('#Verb')) pos = 'VB';
@@ -69,12 +67,9 @@ function tokenizeAndTag(text: string) {
       isPunctuation
     };
   });
-  
-  return tokens;
 }
 
 async function computeDifficulty(title: string): Promise<'straightforward' | 'challenging' | 'obscure'> {
-  // Check pageviews over the last 30 days as a proxy for obscurity
   const end = new Date();
   const start = new Date();
   start.setDate(start.getDate() - 30);
@@ -83,8 +78,8 @@ async function computeDifficulty(title: string): Promise<'straightforward' | 'ch
   
   const url = `${PAGEVIEWS_API}/${encodeURIComponent(title)}/daily/${formatDate(start)}/${formatDate(end)}`;
   try {
-    const res = await fetch(url);
-    if (!res.ok) return 'challenging'; // fallback
+    const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
+    if (!res.ok) return 'challenging';
     const data = await res.json();
     
     let totalViews = 0;
@@ -100,24 +95,61 @@ async function computeDifficulty(title: string): Promise<'straightforward' | 'ch
   }
 }
 
-async function main() {
-  program
-    .requiredOption('-d, --date <date>', 'Puzzle date (YYYY-MM-DD)')
-    .requiredOption('-a, --article <title>', 'Wikipedia article title')
-    .option('-c, --category <category>', 'Category string', 'General')
-    .parse(process.argv);
+async function getRandomArticleTitle(): Promise<string> {
+  const url = 'https://en.wikipedia.org/api/rest_v1/page/random/summary';
+  console.log('Searching for a popular random article...');
+  
+  for (let i = 0; i < 10; i++) {
+    const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
+    if (!res.ok) {
+      console.warn(`Failed to fetch random article: ${res.statusText}`);
+      continue;
+    }
+    const data = await res.json();
+    const title = data.title;
+    
+    const diff = await computeDifficulty(title);
+    // Prefer popular articles so the puzzle is solvable
+    if (diff === 'straightforward' || diff === 'challenging') {
+      console.log(`Found good article: ${title} (${diff})`);
+      return title;
+    }
+  }
+  
+  // Fallback to whatever we get
+  console.log('Could not find popular article, falling back to fully random.');
+  const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
+  if (!res.ok) throw new Error(`Failed to fetch fallback random article: ${res.statusText}`);
+  const data = await res.json();
+  return data.title;
+}
 
-  const options = program.opts();
-  const dateStr = options.date;
-  const articleTitle = options.article.replace(/_/g, ' ');
+// Ensure unlimited-index.json is updated when new puzzles are added
+function updateUnlimitedIndex(dateStr: string, difficulty: string, category: string) {
+  const indexPath = path.resolve(__dirname, '../../public/data/unlimited-index.json');
+  let index: any[] = [];
+  if (fs.existsSync(indexPath)) {
+    index = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+  }
+  
+  if (!index.find((p: any) => p.id === dateStr)) {
+    index.push({ id: dateStr, difficulty, category });
+    index.sort((a, b) => b.id.localeCompare(a.id)); // Newest first
+    fs.writeFileSync(indexPath, JSON.stringify(index, null, 2));
+    console.log(`Updated unlimited-index.json with ${dateStr}`);
+  }
+}
 
+async function generatePuzzle(dateStr: string, requestedTitle: string | null, category: string) {
+  const articleTitle = requestedTitle ? requestedTitle.replace(/_/g, ' ') : await getRandomArticleTitle();
+
+  console.log(`\n--- Generating puzzle for ${dateStr} ---`);
   console.log(`Fetching article: ${articleTitle}...`);
   const html = await fetchArticleHtml(articleTitle);
   
   console.log('Cleaning HTML...');
   const text = cleanHtml(html);
   
-  // Cut to reasonable length if too long (e.g. first 20 paragraphs)
   const paragraphs = text.split('\n\n').slice(0, 20);
   const truncatedText = paragraphs.join('\n\n');
   
@@ -134,19 +166,53 @@ async function main() {
     id: dateStr,
     title: articleTitle,
     normalizedTitle: articleTitle.toLowerCase(),
-    alternateTitles: [articleTitle.split(' ')[0].toLowerCase()], // Simple guess for alt title
-    category: options.category,
+    alternateTitles: [articleTitle.split(' ')[0].toLowerCase()],
+    category: category,
     difficulty,
     firstLetter,
     sampleSentence,
     fullTextRaw: truncatedText,
-    categoriesList: [options.category.split(' – ')[0] || 'General'],
+    categoriesList: [category.split(' – ')[0] || 'General'],
     tokens
   };
   
-  const outPath = path.resolve(__dirname, `../../public/data/puzzles/${dateStr}.json`);
+  const puzzlesDir = path.resolve(__dirname, '../../public/data/puzzles');
+  if (!fs.existsSync(puzzlesDir)) {
+    fs.mkdirSync(puzzlesDir, { recursive: true });
+  }
+  
+  const outPath = path.join(puzzlesDir, `${dateStr}.json`);
   fs.writeFileSync(outPath, JSON.stringify(puzzle, null, 2));
   console.log(`✅ Saved puzzle to ${outPath}`);
+  
+  updateUnlimitedIndex(dateStr, difficulty, category);
+}
+
+async function main() {
+  program
+    .option('-d, --date <date>', 'Start date for puzzles (YYYY-MM-DD)', new Date().toISOString().slice(0, 10))
+    .option('-a, --article <title>', 'Wikipedia article title (optional, picks random if omitted)')
+    .option('-c, --category <category>', 'Category string', 'General')
+    .option('-b, --batch <days>', 'Number of days to generate in batch', '1')
+    .parse(process.argv);
+
+  const options = program.opts();
+  const batchSize = parseInt(options.batch, 10);
+  
+  let currentDate = new Date(options.date);
+  
+  for (let i = 0; i < batchSize; i++) {
+    const dateStr = currentDate.toISOString().slice(0, 10);
+    
+    // Only pass the requested article for the first item if batch > 1, 
+    // otherwise the same article would be used for all 7 days!
+    const article = (i === 0) ? options.article : null;
+    
+    await generatePuzzle(dateStr, article, options.category);
+    
+    // Increment date by 1 day
+    currentDate.setDate(currentDate.getDate() + 1);
+  }
 }
 
 main().catch(console.error);

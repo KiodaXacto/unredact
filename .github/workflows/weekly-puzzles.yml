@@ -1,0 +1,45 @@
+name: Weekly Puzzle Generator
+
+on:
+  schedule:
+    # Run at 00:00 UTC every Sunday
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+    # Allow manual triggering from GitHub UI
+
+jobs:
+  generate-puzzles:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Generate 7 days of puzzles
+        run: |
+          # Use next Monday as the start date if run on Sunday, or just today if run manually
+          START_DATE=$(date -d "tomorrow" +%Y-%m-%d)
+          echo "Generating 7 puzzles starting from $START_DATE"
+          npx tsx tools/pipeline/generate-puzzle.ts --date $START_DATE --batch 7
+          
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/puzzles/*.json public/data/unlimited-index.json
+          # Only commit if there are changes
+          if git diff --staged --quiet; then
+            echo "No new puzzles generated."
+          else
+            git commit -m "chore(puzzles): generate weekly batch of puzzles"
+            git push
+          fi
