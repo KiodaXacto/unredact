@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ── SEO ──────────────────────────────────────────────────── -->
+    <title>Unredact – Daily Wikipedia Word Puzzle</title>
+    <meta
+      name="description"
+      content="Unredact is a daily word puzzle game. The text of a Wikipedia article is hidden. Guess words to reveal them and identify the article. Free, unlimited guesses."
+    />
+    <meta name="keywords" content="word puzzle, wikipedia, daily game, redactle, unredact" />
+    <meta name="author" content="Unredact" />
+    <link rel="canonical" href="https://unredact.com/" />
+
+    <!-- ── Open Graph / Social ────────────────────────────────── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://unredact.com/" />
+    <meta property="og:title" content="Unredact – Daily Wikipedia Word Puzzle" />
+    <meta
+      property="og:description"
+      content="Guess words to reveal a hidden Wikipedia article. A new puzzle every day."
+    />
+    <meta property="og:image" content="https://unredact.com/og-image.png" />
+
+    <!-- ── Twitter Card ────────────────────────────────────────── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Unredact – Daily Wikipedia Word Puzzle" />
+    <meta
+      name="twitter:description"
+      content="Guess words to reveal a hidden Wikipedia article. A new puzzle every day."
+    />
+    <meta name="twitter:image" content="https://unredact.com/og-image.png" />
+
+    <!-- ── PWA / Icons ────────────────────────────────────────── -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#1A1A1A" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- ── Typography (Google Fonts) ──────────────────────────── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ── CSP hint (full CSP is in public/_headers for CF Pages) -->
+    <!-- For Docker/Nginx deployment, CSP is set in nginx.conf     -->
+  </head>
+  <body class="bg-bg-primary text-text-primary antialiased">
+    <!-- ── Accessibility: skip navigation link ───────────────── -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-text-accent focus:text-text-inverse focus:rounded focus:font-semibold focus:outline-none"
+    >
+      Skip to main content
+    </a>
+
+    <!-- ── App root ───────────────────────────────────────────── -->
+    <div id="root"></div>
+
+    <!-- ── Entry point ───────────────────────────────────────── -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

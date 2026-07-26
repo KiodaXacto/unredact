@@ -1,0 +1,20 @@
+[
+  {
+    "id": "2026-07-25",
+    "date": "2026-07-25",
+    "difficulty": "straightforward",
+    "wordCount": 42
+  },
+  {
+    "id": "2026-07-24",
+    "date": "2026-07-24",
+    "difficulty": "challenging",
+    "wordCount": 67
+  },
+  {
+    "id": "2026-07-23",
+    "date": "2026-07-23",
+    "difficulty": "obscure",
+    "wordCount": 55
+  }
+]

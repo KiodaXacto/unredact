@@ -1,0 +1,3 @@
+# SPA fallback — all routes serve index.html
+# Cloudflare Pages and Netlify read this file automatically
+/*    /index.html    200

@@ -1,0 +1,31 @@
+services:
+  unredact:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    image: unredact:latest
+    container_name: unredact
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    # Mount puzzle data directory as a volume for easy puzzle updates
+    volumes:
+      - ./public/data:/usr/share/nginx/html/data:ro
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+
+  # ── Optional: Nginx proxy for HTTPS in production ──────────────
+  # Uncomment and configure if not using Cloudflare for SSL termination
+  # proxy:
+  #   image: nginx:alpine
+  #   ports:
+  #     - "443:443"
+  #   volumes:
+  #     - ./certs:/etc/nginx/certs:ro
+  #   depends_on:
+  #     - unredact
