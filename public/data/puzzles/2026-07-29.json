@@ -1,0 +1,2574 @@
+{
+  "id": "2026-07-29",
+  "title": "Ketchup Entertainment",
+  "normalizedTitle": "ketchup entertainment",
+  "alternateTitles": [
+    "ketchup"
+  ],
+  "category": "General",
+  "difficulty": "challenging",
+  "firstLetter": "K",
+  "sampleSentence": "Ketchup Entertainment (stylized as ketchup.",
+  "fullTextRaw": "Ketchup Entertainment (stylized as ketchup. entertainment) is an American independent film production and distribution company. The company is best known for distributing Hypnotic (2023), Memory (2023), Hellboy: The Crooked Man, Goodrich, The Day the Earth Blew Up: A Looney Tunes Movie (all in 2024), Christmas Karma (2025), Ozi: Voice of the Forest, Misdirection and Coyote vs. Acme (all in 2026).\n\nIn May 2012, Ketchup Entertainment launched its distribution division, partnering with ARC Entertainment. In May 2013, Ketchup entered an agreement with Open Road Films to distribute their films across home entertainment and non-theatrical platforms.\n\nIn 2023, the company distributed Hypnotic directed by Robert Rodriguez, starring Ben Affleck, and Memory starring Jessica Chastain and Peter Sarsgaard. The company also produced Ferrari directed by Michael Mann, and distributed by Neon.\n\nIn September 2023, Ketchup Entertainment secured the distribution rights to Hellboy: The Crooked Man.\n\nIn August 2024, Ketchup Entertainment secured the North American distribution rights to The Day the Earth Blew Up: A Looney Tunes Movie. In March 2025, the company acquired the worldwide distribution rights to another Looney Tunes film, Coyote vs. Acme, which had been unreleased since 2023. The film is set for a theatrical release on August 28, 2026.\n\nThis is a list of films distributed and/or produced by Ketchup Entertainment.",
+  "categoriesList": [
+    "General"
+  ],
+  "tokens": [
+    {
+      "text": "Ketchup",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Entertainment",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " (",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "stylized",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "as",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "ketchup",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ". ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "entertainment",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ") ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "is",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "an",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "American",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "independent",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "film",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "production",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "distribution",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "company",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ". ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "The",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "company",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "is",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "best",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "known",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "for",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "distributing",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Hypnotic",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " (",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "2023",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "), ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Memory",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " (",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "2023",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "), ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Hellboy",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ": ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "The",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Crooked",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Man",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Goodrich",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "The",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Day",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Earth",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Blew",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Up",
+      "pos": "NNP",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": ": ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "A",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Looney",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Tunes",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Movie",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " (",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "all",
+      "pos": "JJ",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "in",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "2024",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "), ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Christmas",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Karma",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " (",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "2025",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "), ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Ozi",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ": ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Voice",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "of",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Forest",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Misdirection",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Coyote",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "vs",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ". ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Acme",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " (",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "all",
+      "pos": "JJ",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "in",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "2026",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ").\n\n",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "In",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "May",
+      "pos": "NNP",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "2012",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Ketchup",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Entertainment",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "launched",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "its",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "distribution",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "division",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "partnering",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "with",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "ARC",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Entertainment",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ". ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "In",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "May",
+      "pos": "NNP",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "2013",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Ketchup",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "entered",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "an",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "agreement",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "with",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Open",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Road",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Films",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "to",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "distribute",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "their",
+      "pos": "PRP",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "films",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "across",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "home",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "entertainment",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "non-theatrical",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "platforms",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ".\n\n",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "In",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "2023",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "company",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "distributed",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Hypnotic",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "directed",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "by",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Robert",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Rodriguez",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "starring",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Ben",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Affleck",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Memory",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "starring",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Jessica",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Chastain",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Peter",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Sarsgaard",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ". ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "The",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "company",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "also",
+      "pos": "RB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "produced",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Ferrari",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "directed",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "by",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Michael",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Mann",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "distributed",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "by",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Neon",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ".\n\n",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "In",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "September",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "2023",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Ketchup",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Entertainment",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "secured",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "distribution",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "rights",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "to",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Hellboy",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ": ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "The",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Crooked",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Man",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ".\n\n",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "In",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "August",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "2024",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Ketchup",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Entertainment",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "secured",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "North",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "American",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "distribution",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "rights",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "to",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "The",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Day",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Earth",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Blew",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Up",
+      "pos": "NNP",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": ": ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "A",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Looney",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Tunes",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Movie",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ". ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "In",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "March",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "2025",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "company",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "acquired",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "worldwide",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "distribution",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "rights",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "to",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "another",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Looney",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Tunes",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "film",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Coyote",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "vs",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ". ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Acme",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "which",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "had",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "been",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "unreleased",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "since",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "2023",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ". ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "The",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "film",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "is",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "set",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "for",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "a",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "theatrical",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "release",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "on",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "August",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "28",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "2026",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ".\n\n",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "This",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "is",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "a",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "list",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "of",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "films",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "distributed",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": "/",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "or",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "produced",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "by",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Ketchup",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Entertainment",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ".",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    }
+  ]
+}

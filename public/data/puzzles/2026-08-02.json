@@ -1,21 +1,33 @@
 {
-  "id": "2026-07-28",
-  "title": "Alfredo Milani",
-  "normalizedTitle": "alfredo milani",
+  "id": "2026-08-02",
+  "title": "The Realm of Possibility",
+  "normalizedTitle": "the realm of possibility",
   "alternateTitles": [
-    "alfredo"
+    "the"
   ],
   "category": "General",
-  "difficulty": "obscure",
-  "firstLetter": "A",
-  "sampleSentence": "Alfredo Milani (6 January 1924 – 30 November 2017) was an Italian Grand Prix motorcycle road racer.",
-  "fullTextRaw": "Alfredo Milani (6 January 1924 – 30 November 2017) was an Italian Grand Prix motorcycle road racer. His best year was in 1951 when he won two Grand Prix races and finished second to Geoff Duke in the 500cc world championship. Milani rode for the Gilera factory for his entire career.",
+  "difficulty": "challenging",
+  "firstLetter": "T",
+  "sampleSentence": "The Realm of Possibility is a 2004 young adult novel by David Levithan.",
+  "fullTextRaw": "The Realm of Possibility is a 2004 young adult novel by David Levithan. Presented as a \"collection of interrelated monologues written in free verse,\" it tells the individual stories of twenty teenagers struggling with high school angst and adolescent life.",
   "categoriesList": [
     "General"
   ],
   "tokens": [
     {
-      "text": "Alfredo",
+      "text": "The",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Realm",
       "pos": "NNP",
       "isStopWord": false,
       "isPunctuation": false
@@ -27,91 +39,31 @@
       "isPunctuation": false
     },
     {
-      "text": "Milani",
+      "text": "of",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Possibility",
       "pos": "NNP",
       "isStopWord": false,
       "isPunctuation": false
     },
     {
-      "text": " (",
-      "pos": "PUNCT",
-      "isStopWord": false,
-      "isPunctuation": true
-    },
-    {
-      "text": "6",
-      "pos": "CD",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
       "text": " ",
       "pos": "SPACE",
       "isStopWord": false,
       "isPunctuation": false
     },
     {
-      "text": "January",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "1924",
-      "pos": "CD",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " – ",
-      "pos": "PUNCT",
-      "isStopWord": false,
-      "isPunctuation": true
-    },
-    {
-      "text": "30",
-      "pos": "CD",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "November",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "2017",
-      "pos": "CD",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": ") ",
-      "pos": "PUNCT",
-      "isStopWord": false,
-      "isPunctuation": true
-    },
-    {
-      "text": "was",
+      "text": "is",
       "pos": "VB",
       "isStopWord": true,
       "isPunctuation": false
@@ -123,7 +75,7 @@
       "isPunctuation": false
     },
     {
-      "text": "an",
+      "text": "a",
       "pos": "NN",
       "isStopWord": true,
       "isPunctuation": false
@@ -135,8 +87,8 @@
       "isPunctuation": false
     },
     {
-      "text": "Italian",
-      "pos": "NNP",
+      "text": "2004",
+      "pos": "CD",
       "isStopWord": false,
       "isPunctuation": false
     },
@@ -147,8 +99,8 @@
       "isPunctuation": false
     },
     {
-      "text": "Grand",
-      "pos": "NNP",
+      "text": "young",
+      "pos": "JJ",
       "isStopWord": false,
       "isPunctuation": false
     },
@@ -159,8 +111,8 @@
       "isPunctuation": false
     },
     {
-      "text": "Prix",
-      "pos": "NNP",
+      "text": "adult",
+      "pos": "JJ",
       "isStopWord": false,
       "isPunctuation": false
     },
@@ -171,7 +123,7 @@
       "isPunctuation": false
     },
     {
-      "text": "motorcycle",
+      "text": "novel",
       "pos": "NN",
       "isStopWord": false,
       "isPunctuation": false
@@ -183,8 +135,20 @@
       "isPunctuation": false
     },
     {
-      "text": "road",
+      "text": "by",
       "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "David",
+      "pos": "NNP",
       "isStopWord": false,
       "isPunctuation": false
     },
@@ -195,8 +159,8 @@
       "isPunctuation": false
     },
     {
-      "text": "racer",
-      "pos": "NN",
+      "text": "Levithan",
+      "pos": "NNP",
       "isStopWord": false,
       "isPunctuation": false
     },
@@ -207,45 +171,93 @@
       "isPunctuation": true
     },
     {
-      "text": "His",
-      "pos": "PRP",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "best",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "year",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "was",
+      "text": "Presented",
       "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "as",
+      "pos": "NN",
       "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "a",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " \"",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "collection",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "of",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "interrelated",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "monologues",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "written",
+      "pos": "VB",
+      "isStopWord": false,
       "isPunctuation": false
     },
     {
@@ -267,8 +279,8 @@
       "isPunctuation": false
     },
     {
-      "text": "1951",
-      "pos": "CD",
+      "text": "free",
+      "pos": "JJ",
       "isStopWord": false,
       "isPunctuation": false
     },
@@ -279,19 +291,19 @@
       "isPunctuation": false
     },
     {
-      "text": "when",
+      "text": "verse",
       "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
       "isStopWord": false,
       "isPunctuation": false
     },
     {
-      "text": "he",
+      "text": ",\" ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "it",
       "pos": "PRP",
       "isStopWord": true,
       "isPunctuation": false
@@ -303,7 +315,7 @@
       "isPunctuation": false
     },
     {
-      "text": "won",
+      "text": "tells",
       "pos": "VB",
       "isStopWord": false,
       "isPunctuation": false
@@ -315,8 +327,8 @@
       "isPunctuation": false
     },
     {
-      "text": "two",
-      "pos": "CD",
+      "text": "the",
+      "pos": "NN",
       "isStopWord": true,
       "isPunctuation": false
     },
@@ -327,8 +339,8 @@
       "isPunctuation": false
     },
     {
-      "text": "Grand",
-      "pos": "NNP",
+      "text": "individual",
+      "pos": "JJ",
       "isStopWord": false,
       "isPunctuation": false
     },
@@ -339,8 +351,8 @@
       "isPunctuation": false
     },
     {
-      "text": "Prix",
-      "pos": "NNP",
+      "text": "stories",
+      "pos": "NN",
       "isStopWord": false,
       "isPunctuation": false
     },
@@ -351,8 +363,92 @@
       "isPunctuation": false
     },
     {
-      "text": "races",
-      "pos": "VB",
+      "text": "of",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "twenty",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "teenagers",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "struggling",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "with",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "high",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "school",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "angst",
+      "pos": "NN",
       "isStopWord": false,
       "isPunctuation": false
     },
@@ -375,7 +471,7 @@
       "isPunctuation": false
     },
     {
-      "text": "finished",
+      "text": "adolescent",
       "pos": "JJ",
       "isStopWord": false,
       "isPunctuation": false
@@ -387,223 +483,7 @@
       "isPunctuation": false
     },
     {
-      "text": "second",
-      "pos": "CD",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "to",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "Geoff",
-      "pos": "NNP",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "Duke",
-      "pos": "NNP",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "in",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "the",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "500cc",
-      "pos": "CD",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "world",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "championship",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": ". ",
-      "pos": "PUNCT",
-      "isStopWord": false,
-      "isPunctuation": true
-    },
-    {
-      "text": "Milani",
-      "pos": "NNP",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "rode",
-      "pos": "VB",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "for",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "the",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "Gilera",
-      "pos": "NNP",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "factory",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "for",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "his",
-      "pos": "PRP",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "entire",
-      "pos": "JJ",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "career",
+      "text": "life",
       "pos": "NN",
       "isStopWord": false,
       "isPunctuation": false
