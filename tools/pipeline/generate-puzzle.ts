@@ -145,6 +145,23 @@ function updateUnlimitedIndex(dateStr: string, difficulty: string, category: str
   }
 }
 
+// Ensure archive-index.json is updated when new puzzles are added
+function updateArchiveIndex(dateStr: string, difficulty: string, tokens: any[]) {
+  const indexPath = path.resolve(__dirname, '../../public/data/archive-index.json');
+  let index: any[] = [];
+  if (fs.existsSync(indexPath)) {
+    index = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+  }
+  
+  if (!index.find((p: any) => p.id === dateStr)) {
+    const wordCount = tokens.filter(t => !t.isPunctuation && t.pos !== 'SPACE').length;
+    index.push({ id: dateStr, date: dateStr, difficulty, wordCount });
+    index.sort((a, b) => b.id.localeCompare(a.id)); // Newest first
+    fs.writeFileSync(indexPath, JSON.stringify(index, null, 2));
+    console.log(`Updated archive-index.json with ${dateStr}`);
+  }
+}
+
 async function generatePuzzle(dateStr: string, requestedTitle: string | null, category: string, lang: 'en' | 'fr') {
   const articleTitle = requestedTitle ? requestedTitle.replace(/_/g, ' ') : await getRandomArticleTitle(lang);
 
@@ -193,6 +210,7 @@ async function generatePuzzle(dateStr: string, requestedTitle: string | null, ca
   // Only update index with the ID (without language suffix), 
   // since the index is shared, and DailyRoute will append -en or -fr
   updateUnlimitedIndex(dateStr, difficulty, category);
+  updateArchiveIndex(dateStr, difficulty, tokens);
 }
 
 async function main() {

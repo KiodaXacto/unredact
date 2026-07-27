@@ -1,20 +1,74 @@
 [
   {
+    "id": "2026-08-03",
+    "date": "2026-08-03",
+    "difficulty": "challenging",
+    "wordCount": 1358
+  },
+  {
+    "id": "2026-08-02",
+    "date": "2026-08-02",
+    "difficulty": "obscure",
+    "wordCount": 153
+  },
+  {
+    "id": "2026-08-01",
+    "date": "2026-08-01",
+    "difficulty": "challenging",
+    "wordCount": 2074
+  },
+  {
+    "id": "2026-07-31",
+    "date": "2026-07-31",
+    "difficulty": "obscure",
+    "wordCount": 133
+  },
+  {
+    "id": "2026-07-30",
+    "date": "2026-07-30",
+    "difficulty": "obscure",
+    "wordCount": 77
+  },
+  {
+    "id": "2026-07-29",
+    "date": "2026-07-29",
+    "difficulty": "obscure",
+    "wordCount": 1035
+  },
+  {
+    "id": "2026-07-28",
+    "date": "2026-07-28",
+    "difficulty": "obscure",
+    "wordCount": 448
+  },
+  {
+    "id": "2026-07-27",
+    "date": "2026-07-27",
+    "difficulty": "challenging",
+    "wordCount": 114
+  },
+  {
+    "id": "2026-07-26",
+    "date": "2026-07-26",
+    "difficulty": "straightforward",
+    "wordCount": 83
+  },
+  {
     "id": "2026-07-25",
     "date": "2026-07-25",
     "difficulty": "straightforward",
-    "wordCount": 42
+    "wordCount": 83
   },
   {
     "id": "2026-07-24",
     "date": "2026-07-24",
     "difficulty": "challenging",
-    "wordCount": 67
+    "wordCount": 31
   },
   {
     "id": "2026-07-23",
     "date": "2026-07-23",
     "difficulty": "obscure",
-    "wordCount": 55
+    "wordCount": 34
   }
 ]
