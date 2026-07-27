@@ -48,8 +48,7 @@ export const GamePage = ({ puzzle, mode, settings, onStateChange }: GamePageProp
   useEffect(() => {
     const savedState = mode === 'daily' ? loadDailyProgress(puzzle.id, settings.language) : null;
     loadPuzzle(puzzle, mode, settings.language, savedState ?? undefined);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [puzzle.id, mode, settings.language]);
+  }, [puzzle, mode, settings.language, loadPuzzle]);
 
   // Show post-solve overlay when solved
   useEffect(() => {
