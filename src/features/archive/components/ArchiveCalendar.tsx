@@ -24,9 +24,9 @@ const DIFFICULTY_EMOJI: Record<string, string> = {
   obscure:         '🔴',
 };
 
-const formatDate = (id: string): string => {
+const formatDate = (id: string, language: string): string => {
   const d = new Date(id + 'T00:00:00');
-  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  return d.toLocaleDateString(language === 'fr' ? 'fr-FR' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 };
 
 export const ArchiveCalendar = ({ entries, playedIds, language, onSelect }: ArchiveCalendarProps) => {
@@ -49,15 +49,19 @@ export const ArchiveCalendar = ({ entries, playedIds, language, onSelect }: Arch
             className={`group flex items-center justify-between rounded-xl border p-4 text-left transition-all hover:brightness-110 active:scale-98 ${
               DIFFICULTY_STYLE[entry.difficulty] ?? 'border-[var(--color-border)] bg-[var(--color-bg-secondary)]'
             }`}
-            aria-label={`${formatDate(entry.id)} puzzle — ${entry.difficulty}${played ? ' (completed)' : ''}`}
+            aria-label={`${formatDate(entry.id, language)} puzzle — ${entry.difficulty}${played ? ' (completed)' : ''}`}
           >
             <div>
               <p className="text-sm font-semibold text-[var(--color-text-primary)]">
-                {formatDate(entry.id)}
+                {formatDate(entry.id, language)}
               </p>
               <p className="mt-0.5 flex items-center gap-1.5 text-xs text-[var(--color-text-muted)]">
                 <span>{DIFFICULTY_EMOJI[entry.difficulty]}</span>
-                <span className="capitalize">{t(`difficulty${entry.difficulty.charAt(0).toUpperCase() + entry.difficulty.slice(1)}`)}</span>
+                <span className="capitalize">{
+                  entry.difficulty === 'straightforward' 
+                    ? t('difficultyEasy') 
+                    : t(`difficulty${entry.difficulty.charAt(0).toUpperCase() + entry.difficulty.slice(1)}`)
+                }</span>
                 <span>·</span>
                 <span>~{entry.wordCount} {t('words', { fallback: 'words' })}</span>
               </p>
