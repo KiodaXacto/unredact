@@ -78,8 +78,10 @@ export const saveStats = (stats: Statistics, lang: string = 'en'): void => {
 
 // ── Settings ──────────────────────────────────────────────────────
 
-export const loadSettings = (): Settings =>
-  get<Settings>(KEYS.settings, DEFAULT_SETTINGS);
+export const loadSettings = (): Settings => {
+  const loaded = get<Partial<Settings>>(KEYS.settings, {});
+  return { ...DEFAULT_SETTINGS, ...loaded };
+};
 
 export const saveSettings = (settings: Settings): void => {
   set(KEYS.settings, settings);

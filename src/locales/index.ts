@@ -200,7 +200,8 @@ export type TranslationKey = keyof typeof translations.en;
 
 export function useTranslation(lang: Language) {
   return function t(key: TranslationKey | string, params?: Record<string, string | number>): string {
-    let str: string = translations[lang][key as TranslationKey] || translations['en'][key as TranslationKey] || (params?.fallback as string) || key;
+    const langDict = translations[lang] || translations['en'];
+    let str: string = langDict[key as TranslationKey] || translations['en'][key as TranslationKey] || (params?.fallback as string) || key;
     if (params && str) {
       for (const [k, v] of Object.entries(params)) {
         str = str.replace(`{${k}}`, String(v));
