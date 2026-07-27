@@ -66,7 +66,7 @@ export const getPuzzleById = async (id: string, lang: 'en' | 'fr' = 'en'): Promi
  * Used to render the archive calendar.
  */
 export const getArchiveIndex = async (): Promise<ArchiveEntry[]> => {
-  return fetchJson<ArchiveEntry[]>(ARCHIVE_INDEX_URL);
+  return fetchJson<ArchiveEntry[]>(`${ARCHIVE_INDEX_URL}?t=${Date.now()}`);
 };
 
 // ── Unlimited mode ────────────────────────────────────────────────
@@ -87,7 +87,7 @@ export const getUnlimitedPuzzle = async (
   },
   lang: 'en' | 'fr' = 'en'
 ): Promise<Puzzle> => {
-  const index = await fetchJson<UnlimitedIndexEntry[]>(UNLIMITED_INDEX_URL);
+  const index = await fetchJson<UnlimitedIndexEntry[]>(`${UNLIMITED_INDEX_URL}?t=${Date.now()}`);
 
   const filtered = index.filter((entry) => {
     if (filters.difficulty !== 'all' && entry.difficulty !== filters.difficulty) return false;
