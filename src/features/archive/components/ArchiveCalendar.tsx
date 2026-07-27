@@ -2,10 +2,13 @@
 // Grid view of all past puzzles with difficulty badges and played status.
 
 import type { ArchiveEntry } from '@features/archive/types';
+import { useTranslation } from '@/locales/index';
+import type { Language } from '@/locales/index';
 
 interface ArchiveCalendarProps {
   entries: ArchiveEntry[];
   playedIds: Set<string>;
+  language: Language;
   onSelect: (entry: ArchiveEntry) => void;
 }
 
@@ -26,8 +29,9 @@ const formatDate = (id: string): string => {
   return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 };
 
-export const ArchiveCalendar = ({ entries, playedIds, onSelect }: ArchiveCalendarProps) => {
+export const ArchiveCalendar = ({ entries, playedIds, language, onSelect }: ArchiveCalendarProps) => {
   const sorted = [...entries].sort((a, b) => b.date.localeCompare(a.date));
+  const t = useTranslation(language);
 
   return (
     <div
@@ -53,9 +57,9 @@ export const ArchiveCalendar = ({ entries, playedIds, onSelect }: ArchiveCalenda
               </p>
               <p className="mt-0.5 flex items-center gap-1.5 text-xs text-[var(--color-text-muted)]">
                 <span>{DIFFICULTY_EMOJI[entry.difficulty]}</span>
-                <span className="capitalize">{entry.difficulty}</span>
+                <span className="capitalize">{t(`difficulty${entry.difficulty.charAt(0).toUpperCase() + entry.difficulty.slice(1)}`)}</span>
                 <span>·</span>
-                <span>~{entry.wordCount} words</span>
+                <span>~{entry.wordCount} {t('words', { fallback: 'words' })}</span>
               </p>
             </div>
 

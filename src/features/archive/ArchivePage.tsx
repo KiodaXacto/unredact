@@ -45,6 +45,18 @@ export const ArchivePage = () => {
     };
   }, [setCurrentPuzzle, setGameState]);
 
+  useEffect(() => {
+    if (selectedPuzzle) {
+      setLoadingPuzzle(true);
+      getPuzzleById(selectedPuzzle.id, settings.language)
+        .then((puzzle) => {
+          setSelectedPuzzle(puzzle);
+          setCurrentPuzzle(puzzle);
+        })
+        .finally(() => setLoadingPuzzle(false));
+    }
+  }, [settings.language]); // Intentionally omitting selectedPuzzle and setCurrentPuzzle to only trigger on language change
+
   const handleSelect = async (entry: ArchiveEntry) => {
     setLoadingPuzzle(true);
     setError(null);
@@ -124,6 +136,7 @@ export const ArchivePage = () => {
         <ArchiveCalendar
           entries={entries}
           playedIds={played}
+          language={settings.language}
           onSelect={(entry) => { void handleSelect(entry); }}
         />
       )}

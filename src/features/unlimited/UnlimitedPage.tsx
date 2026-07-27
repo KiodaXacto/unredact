@@ -1,10 +1,10 @@
 // src/features/unlimited/UnlimitedPage.tsx
 // Unlimited mode — play any puzzle with optional difficulty/category filters.
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { useOutletContext } from 'react-router-dom';
 import { GamePage } from '@features/game/GamePage';
-import { getUnlimitedPuzzle } from '@services/puzzleService';
+import { getUnlimitedPuzzle, getPuzzleById } from '@services/puzzleService';
 import type { Puzzle, GameState, UnlimitedFilters } from '@features/game/types';
 import type { Settings } from '@features/settings/types';
 import { useTranslation } from '@/locales/index';
@@ -45,6 +45,18 @@ export const UnlimitedPage = () => {
     setCurrentPuzzle(null);
     setGameState(null);
   };
+
+  useEffect(() => {
+    if (puzzle) {
+      setLoading(true);
+      getPuzzleById(puzzle.id, settings.language)
+        .then((p) => {
+          setPuzzle(p);
+          setCurrentPuzzle(p);
+        })
+        .finally(() => setLoading(false));
+    }
+  }, [settings.language]); // Intentionally omitting puzzle and setCurrentPuzzle
 
   // ── Active game view ────────────────────────────────────────────
   if (puzzle) {
