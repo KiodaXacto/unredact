@@ -95,6 +95,7 @@ export const translations = {
     
     // Archive
     archiveDesc: 'Play any past daily puzzle at your own pace.',
+    words: 'words',
   },
   fr: {
     // Header
@@ -192,6 +193,7 @@ export const translations = {
     
     // Archive
     archiveDesc: 'Jouez à n’importe quelle énigme quotidienne passée à votre rythme.',
+    words: 'mots',
   }
 } as const;
 
