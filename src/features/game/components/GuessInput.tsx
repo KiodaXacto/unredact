@@ -4,6 +4,7 @@
 
 import { useState, useRef, useCallback, useId } from 'react';
 import type { GuessRecord } from '@features/game/types';
+import { useTranslation } from '@/locales/index';
 
 interface GuessInputProps {
   onGuess: (word: string) => void;
@@ -12,6 +13,7 @@ interface GuessInputProps {
   revealedPercent: number;
   solved: boolean;
   disabled?: boolean;
+  language: 'en' | 'fr';
 }
 
 export const GuessInput = ({
@@ -21,10 +23,12 @@ export const GuessInput = ({
   revealedPercent,
   solved,
   disabled = false,
+  language,
 }: GuessInputProps) => {
   const [inputValue, setInputValue] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
   const announcementId = useId();
+  const t = useTranslation(language);
 
   const handleSubmit = useCallback(() => {
     const trimmed = inputValue.trim();
@@ -48,11 +52,13 @@ export const GuessInput = ({
   // Build announcement text for screen readers
   const buildAnnouncement = (): string => {
     if (!lastGuess) return '';
-    if (lastGuess.isTitle) return `You solved it! The article is: ${lastGuess.word}`;
-    if (lastGuess.isAlternate) return `Almost! "${lastGuess.word}" is related — try the full title.`;
-    if (lastGuess.revealCount > 0)
-      return `"${lastGuess.word}" revealed ${lastGuess.revealCount} word${lastGuess.revealCount === 1 ? '' : 's'}.`;
-    return `"${lastGuess.word}" not found in this article.`;
+    if (lastGuess.isTitle) return t('announcementSolved', { word: lastGuess.word });
+    if (lastGuess.isAlternate) return t('announcementAlternate', { word: lastGuess.word });
+    if (lastGuess.revealCount > 0) {
+      const plural = lastGuess.revealCount === 1 ? '' : 's';
+      return t('announcementRevealed', { word: lastGuess.word, count: lastGuess.revealCount, plural });
+    }
+    return t('announcementNotFound', { word: lastGuess.word });
   };
 
   return (
@@ -90,7 +96,7 @@ export const GuessInput = ({
           autoCorrect="off"
           autoCapitalize="none"
           spellCheck={false}
-          placeholder={solved ? 'Puzzle solved! 🏆' : 'Type a word and press Enter…'}
+          placeholder={solved ? '🏆' : t('guessPlaceholder')}
           aria-label="Type a word to guess"
           aria-describedby={announcementId}
           className="flex-1 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-primary)] px-4 py-2.5 text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] outline-none transition-colors focus:border-[var(--color-accent)] focus:ring-2 focus:ring-[var(--color-accent)] focus:ring-opacity-30 disabled:cursor-not-allowed disabled:opacity-50"
@@ -103,7 +109,7 @@ export const GuessInput = ({
           aria-label="Submit guess"
           className="shrink-0 rounded-lg bg-[var(--color-accent)] px-5 py-2.5 font-semibold text-[var(--color-text-inverse)] transition-all hover:brightness-110 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
         >
-          Guess
+          {t('submitGuess')}
         </button>
       </div>
 

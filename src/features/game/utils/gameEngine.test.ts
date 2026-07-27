@@ -163,6 +163,7 @@ describe('processGuess', () => {
       invertedIndex,
       guessedWords: new Set<string>(),
       puzzle,
+      language: 'en' as const,
     };
     return { tokens, state };
   };

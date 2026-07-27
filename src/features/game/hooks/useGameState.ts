@@ -28,6 +28,7 @@ const createInitialState = (): GameState => ({
   almostSolved: false,
   guessHistory: [],
   mode: 'daily',
+  language: 'en',
   startedAt: null,
   solvedAt: null,
 });
@@ -39,7 +40,7 @@ const createInitialState = (): GameState => ({
 const gameReducer = (state: GameState, action: GameAction): GameState => {
   switch (action.type) {
     case 'LOAD_PUZZLE': {
-      const { puzzle, mode, savedState } = action.payload;
+      const { puzzle, mode, language, savedState } = action.payload;
       const tokens = buildTokens(puzzle.tokens);
       const invertedIndex = buildInvertedIndex(tokens);
 
@@ -56,6 +57,7 @@ const gameReducer = (state: GameState, action: GameAction): GameState => {
         invertedIndex,
         totalRedactedCount,
         mode,
+        language,
         startedAt: new Date().toISOString(),
       };
 
@@ -70,6 +72,7 @@ const gameReducer = (state: GameState, action: GameAction): GameState => {
             invertedIndex,
             guessedWords: new Set<string>(),
             puzzle,
+            language,
           });
           restoredTokens = applyReveal(restoredTokens, result.revealedIds);
         }
@@ -87,6 +90,7 @@ const gameReducer = (state: GameState, action: GameAction): GameState => {
           solved: savedState.solved ?? false,
           almostSolved: savedState.almostSolved ?? false,
           guessHistory: savedState.guessHistory ?? [],
+          language: savedState.language ?? language,
           startedAt: savedState.startedAt ?? nextState.startedAt,
           solvedAt: savedState.solvedAt ?? null,
         };
@@ -195,7 +199,7 @@ const gameReducer = (state: GameState, action: GameAction): GameState => {
 
 export interface UseGameStateReturn {
   state: GameState;
-  loadPuzzle: (puzzle: Puzzle, mode: GameState['mode'], savedState?: SerializableGameState) => void;
+  loadPuzzle: (puzzle: Puzzle, mode: GameState['mode'], language: 'en' | 'fr', savedState?: SerializableGameState) => void;
   submitGuess: (word: string) => void;
   useHint: (level: HintLevel) => void;
   resetGame: () => void;
@@ -205,8 +209,8 @@ export const useGameState = (): UseGameStateReturn => {
   const [state, dispatch] = useReducer(gameReducer, undefined, createInitialState);
 
   const loadPuzzle = useCallback(
-    (puzzle: Puzzle, mode: GameState['mode'], savedState?: SerializableGameState) => {
-      dispatch({ type: 'LOAD_PUZZLE', payload: { puzzle, mode, savedState } });
+    (puzzle: Puzzle, mode: GameState['mode'], language: 'en' | 'fr', savedState?: SerializableGameState) => {
+      dispatch({ type: 'LOAD_PUZZLE', payload: { puzzle, mode, language, savedState } });
     },
     []
   );

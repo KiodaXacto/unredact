@@ -3,6 +3,7 @@
 
 import { Modal } from '@components/ui/Modal';
 import type { Settings, Theme, FontSize } from '@features/settings/types';
+import { useTranslation } from '@/locales/index';
 
 interface SettingsModalProps {
   settings: Settings;
@@ -115,65 +116,80 @@ export const SettingsModal = ({
   onUpdate,
   onReset,
   onClose,
-}: SettingsModalProps) => (
-  <Modal id="settings" title="Settings" onClose={onClose}>
-    <div className="flex flex-col gap-6">
-      {/* Theme */}
-      <SegmentedControl<Theme>
-        label="Theme"
-        name="theme"
-        value={settings.theme}
-        onChange={(val) => onUpdate({ theme: val })}
-        options={[
-          { value: 'dark', label: '🌙 Dark' },
-          { value: 'light', label: '☀️ Light' },
-          { value: 'system', label: '🖥 System' },
-        ]}
-      />
+}: SettingsModalProps) => {
+  const t = useTranslation(settings.language);
 
-      {/* Font size */}
-      <SegmentedControl<FontSize>
-        label="Font Size"
-        name="font-size"
-        value={settings.fontSize}
-        onChange={(val) => onUpdate({ fontSize: val })}
-        options={[
-          { value: 'small', label: 'Small' },
-          { value: 'medium', label: 'Medium' },
-          { value: 'large', label: 'Large' },
-        ]}
-      />
-
-      {/* Toggles */}
-      <div className="flex flex-col gap-4">
-        <SectionLabel>Features</SectionLabel>
-
-        <ToggleRow
-          id="toggle-pos-colors"
-          label="Part-of-Speech Colors"
-          description="Color code nouns, verbs, adjectives, and numbers"
-          checked={settings.posColorsEnabled}
-          onChange={(val) => onUpdate({ posColorsEnabled: val })}
+  return (
+    <Modal id="settings" title={t('settingsTitle')} onClose={onClose} closeLabel={t('closeLabel')}>
+      <div className="flex flex-col gap-6">
+        {/* Theme */}
+        <SegmentedControl<Theme>
+          label={t('theme')}
+          name="theme"
+          value={settings.theme}
+          onChange={(val) => onUpdate({ theme: val })}
+          options={[
+            { value: 'dark', label: `🌙 ${t('themeDark')}` },
+            { value: 'light', label: `☀️ ${t('themeLight')}` },
+            { value: 'system', label: `🖥 ${t('themeSystem')}` },
+          ]}
         />
 
-        <ToggleRow
-          id="toggle-high-contrast"
-          label="High Contrast"
-          description="Improve readability for low-vision users"
-          checked={settings.highContrastEnabled}
-          onChange={(val) => onUpdate({ highContrastEnabled: val })}
+        {/* Font size */}
+        <SegmentedControl<FontSize>
+          label={t('fontSize')}
+          name="font-size"
+          value={settings.fontSize}
+          onChange={(val) => onUpdate({ fontSize: val })}
+          options={[
+            { value: 'small', label: t('fontSizeSmall') },
+            { value: 'medium', label: t('fontSizeMedium') },
+            { value: 'large', label: t('fontSizeLarge') },
+          ]}
         />
-      </div>
 
-      {/* Reset */}
-      <div className="border-t border-[var(--color-border)] pt-4">
-        <button
-          onClick={onReset}
-          className="w-full rounded-lg py-2 text-sm text-[var(--color-text-muted)] transition-colors hover:text-red-400"
-        >
-          Reset to defaults
-        </button>
+        {/* Language */}
+        <SegmentedControl<'en' | 'fr'>
+          label={t('language')}
+          name="language"
+          value={settings.language}
+          onChange={(val) => onUpdate({ language: val })}
+          options={[
+            { value: 'en', label: t('languageEn') },
+            { value: 'fr', label: t('languageFr') },
+          ]}
+        />
+
+        {/* Toggles */}
+        <div className="flex flex-col gap-4">
+          <SectionLabel>Features</SectionLabel>
+
+          <ToggleRow
+            id="toggle-pos-colors"
+            label={t('posColors')}
+            description={t('posColorsDesc')}
+            checked={settings.posColorsEnabled}
+            onChange={(val) => onUpdate({ posColorsEnabled: val })}
+          />
+
+          <ToggleRow
+            id="toggle-high-contrast"
+            label={t('highContrast')}
+            description={t('highContrastDesc')}
+            checked={settings.highContrastEnabled}
+            onChange={(val) => onUpdate({ highContrastEnabled: val })}
+          />
+        </div>
+
+        <div className="border-t border-[var(--color-border)] pt-4">
+          <button
+            onClick={onReset}
+            className="w-full rounded-lg py-2 text-sm text-[var(--color-text-muted)] transition-colors hover:text-red-400"
+          >
+            {t('resetDefaults')}
+          </button>
+        </div>
       </div>
-    </div>
-  </Modal>
-);
+    </Modal>
+  );
+};

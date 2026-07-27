@@ -31,7 +31,12 @@
   },
   {
     "id": "2026-07-27",
-    "difficulty": "challenging",
+    "difficulty": "obscure",
+    "category": "General"
+  },
+  {
+    "id": "2026-07-26",
+    "difficulty": "obscure",
     "category": "General"
   },
   {

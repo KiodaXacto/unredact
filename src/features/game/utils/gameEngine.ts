@@ -17,7 +17,6 @@ import { isStopWord } from '@data/stopWords';
 // Token building
 // ─────────────────────────────────────────────────────────────────
 
-const LEADING_TRAILING_PUNCT = /^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g;
 const WHITESPACE_REGEX = /^\s+$/;
 const PARAGRAPH_BREAK_REGEX = /\n\n/;
 
@@ -26,8 +25,13 @@ const PARAGRAPH_BREAK_REGEX = /\n\n/;
  * "Darwin." → "darwin"
  * "world—" → "world"
  */
-export const normalizeWord = (word: string): string =>
-  word.replace(LEADING_TRAILING_PUNCT, '').toLowerCase();
+export function normalizeWord(word: string): string {
+  return word
+    .toLowerCase()
+    .normalize('NFD') // Decompose combined graphemes into the combination of simple ones
+    .replace(/[\u0300-\u036f]/g, '') // Remove diacritics
+    .replace(/[^a-z0-9]/g, ''); // Keep only alphanumeric
+}
 
 /**
  * Convert the raw token array from JSON into runtime Token objects.
@@ -90,7 +94,7 @@ export const buildInvertedIndex = (tokens: Token[]): Map<string, number[]> => {
  */
 export const processGuess = (
   rawInput: string,
-  state: Pick<GameState, 'invertedIndex' | 'guessedWords' | 'puzzle'>
+  state: Pick<GameState, 'invertedIndex' | 'guessedWords' | 'puzzle' | 'language'>
 ): GuessResult => {
   const normalized = normalizeWord(rawInput.trim());
 
@@ -116,7 +120,7 @@ export const processGuess = (
       const titleWords = puzzle.title
         .match(/([a-zA-Z0-9À-ÿ-]+)/g)
         ?.map(normalizeWord)
-        .filter(w => w && !isStopWord(w)) || [];
+        .filter(w => w && !isStopWord(w, state.language)) || [];
       
       if (titleWords.length > 0 && titleWords.every(w => currentGuesses.has(w))) {
         isTitle = true;
@@ -274,6 +278,7 @@ export const serializeState = (state: GameState): SerializableGameState | null =
     almostSolved: state.almostSolved,
     guessHistory: state.guessHistory,
     mode: state.mode,
+    language: state.language,
     startedAt: state.startedAt,
     solvedAt: state.solvedAt,
   };

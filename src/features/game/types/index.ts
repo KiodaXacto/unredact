@@ -83,6 +83,8 @@ export interface GameState {
   guessHistory: GuessRecord[];
   /** Current game mode — affects progress saving and streak calculation */
   mode: 'daily' | 'archive' | 'unlimited';
+  /** Current language of the game */
+  language: 'en' | 'fr';
   /** ISO date string of when the game was started */
   startedAt: string | null;
   /** ISO date string of when the game was solved */
@@ -131,7 +133,7 @@ export interface GuessResult {
 // ── Reducer actions ───────────────────────────────────────────────
 
 export type GameAction =
-  | { type: 'LOAD_PUZZLE'; payload: { puzzle: Puzzle; mode: GameState['mode']; savedState?: Partial<SerializableGameState> } }
+  | { type: 'LOAD_PUZZLE'; payload: { puzzle: Puzzle; mode: GameState['mode']; language: 'en' | 'fr'; savedState?: Partial<SerializableGameState> } }
   | { type: 'SUBMIT_GUESS'; payload: string }
   | { type: 'USE_HINT'; payload: HintLevel }
   | { type: 'RESET_GAME' };
@@ -147,6 +149,7 @@ export interface SerializableGameState {
   almostSolved: boolean;
   guessHistory: GuessRecord[];
   mode: GameState['mode'];
+  language: 'en' | 'fr';
   startedAt: string | null;
   solvedAt: string | null;
 }

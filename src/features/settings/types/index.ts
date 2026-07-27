@@ -8,6 +8,7 @@ export interface Settings {
   fontSize: FontSize;
   posColorsEnabled: boolean;
   highContrastEnabled: boolean;
+  language: 'en' | 'fr';
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -15,4 +16,5 @@ export const DEFAULT_SETTINGS: Settings = {
   fontSize: 'medium',
   posColorsEnabled: false,
   highContrastEnabled: false,
+  language: 'en',
 };

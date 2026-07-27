@@ -1,17 +1,22 @@
 import { program } from 'commander';
 import * as cheerio from 'cheerio';
 import nlp from 'compromise';
+import nlpFr from 'fr-compromise';
 import fs from 'fs';
 import path from 'path';
 import { isStopWord } from '../../src/data/stopWords';
 
-const API_BASE = 'https://en.wikipedia.org/api/rest_v1/page/html';
-const PAGEVIEWS_API = 'https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents';
-
 const USER_AGENT = 'UnredactBot/1.0 (https://unredact.com; contact@unredact.com)';
 
-async function fetchArticleHtml(title: string): Promise<string> {
-  const url = `${API_BASE}/${encodeURIComponent(title)}`;
+function getApiBase(lang: string) {
+  return `https://${lang}.wikipedia.org/api/rest_v1/page/html`;
+}
+function getPageviewsApi(lang: string) {
+  return `https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/${lang}.wikipedia/all-access/all-agents`;
+}
+
+async function fetchArticleHtml(title: string, lang: string): Promise<string> {
+  const url = `${getApiBase(lang)}/${encodeURIComponent(title)}`;
   const response = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
   if (!response.ok) throw new Error(`Failed to fetch article: ${response.statusText}`);
   return response.text();
@@ -35,8 +40,8 @@ function cleanHtml(html: string): string {
   return text.trim();
 }
 
-function tokenizeAndTag(text: string) {
-  const doc = nlp(text);
+function tokenizeAndTag(text: string, lang: 'en' | 'fr') {
+  const doc = lang === 'fr' ? nlpFr(text) : nlp(text);
   const regex = /([a-zA-Z0-9À-ÿ-]+)|([^a-zA-Z0-9À-ÿ-]+)/g;
   const rawMatches = [...text.matchAll(regex)];
   
@@ -63,20 +68,20 @@ function tokenizeAndTag(text: string) {
     return {
       text: val,
       pos,
-      isStopWord: isWhitespace || isPunctuation ? false : isStopWord(val),
+      isStopWord: isWhitespace || isPunctuation ? false : isStopWord(val, lang),
       isPunctuation
     };
   });
 }
 
-async function computeDifficulty(title: string): Promise<'straightforward' | 'challenging' | 'obscure'> {
+async function computeDifficulty(title: string, lang: string): Promise<'straightforward' | 'challenging' | 'obscure'> {
   const end = new Date();
   const start = new Date();
   start.setDate(start.getDate() - 30);
   
   const formatDate = (d: Date) => d.toISOString().slice(0, 10).replace(/-/g, '');
   
-  const url = `${PAGEVIEWS_API}/${encodeURIComponent(title)}/daily/${formatDate(start)}/${formatDate(end)}`;
+  const url = `${getPageviewsApi(lang)}/${encodeURIComponent(title)}/daily/${formatDate(start)}/${formatDate(end)}`;
   try {
     const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
     if (!res.ok) return 'challenging';
@@ -95,8 +100,8 @@ async function computeDifficulty(title: string): Promise<'straightforward' | 'ch
   }
 }
 
-async function getRandomArticleTitle(): Promise<string> {
-  const url = 'https://en.wikipedia.org/api/rest_v1/page/random/summary';
+async function getRandomArticleTitle(lang: string): Promise<string> {
+  const url = `https://${lang}.wikipedia.org/api/rest_v1/page/random/summary`;
   console.log('Searching for a popular random article...');
   
   for (let i = 0; i < 10; i++) {
@@ -108,7 +113,7 @@ async function getRandomArticleTitle(): Promise<string> {
     const data = await res.json();
     const title = data.title;
     
-    const diff = await computeDifficulty(title);
+    const diff = await computeDifficulty(title, lang);
     // Prefer popular articles so the puzzle is solvable
     if (diff === 'straightforward' || diff === 'challenging') {
       console.log(`Found good article: ${title} (${diff})`);
@@ -140,12 +145,12 @@ function updateUnlimitedIndex(dateStr: string, difficulty: string, category: str
   }
 }
 
-async function generatePuzzle(dateStr: string, requestedTitle: string | null, category: string) {
-  const articleTitle = requestedTitle ? requestedTitle.replace(/_/g, ' ') : await getRandomArticleTitle();
+async function generatePuzzle(dateStr: string, requestedTitle: string | null, category: string, lang: 'en' | 'fr') {
+  const articleTitle = requestedTitle ? requestedTitle.replace(/_/g, ' ') : await getRandomArticleTitle(lang);
 
-  console.log(`\n--- Generating puzzle for ${dateStr} ---`);
+  console.log(`\n--- Generating puzzle for ${dateStr} (${lang.toUpperCase()}) ---`);
   console.log(`Fetching article: ${articleTitle}...`);
-  const html = await fetchArticleHtml(articleTitle);
+  const html = await fetchArticleHtml(articleTitle, lang);
   
   console.log('Cleaning HTML...');
   const text = cleanHtml(html);
@@ -154,10 +159,10 @@ async function generatePuzzle(dateStr: string, requestedTitle: string | null, ca
   const truncatedText = paragraphs.join('\n\n');
   
   console.log('Tokenizing and tagging (this might take a moment)...');
-  const tokens = tokenizeAndTag(truncatedText);
+  const tokens = tokenizeAndTag(truncatedText, lang);
   
   console.log('Computing difficulty based on pageviews...');
-  const difficulty = await computeDifficulty(articleTitle);
+  const difficulty = await computeDifficulty(articleTitle, lang);
   
   const firstLetter = articleTitle.charAt(0).toUpperCase();
   const sampleSentence = paragraphs[0]?.split('. ')[0] + '.' || '';
@@ -181,10 +186,12 @@ async function generatePuzzle(dateStr: string, requestedTitle: string | null, ca
     fs.mkdirSync(puzzlesDir, { recursive: true });
   }
   
-  const outPath = path.join(puzzlesDir, `${dateStr}.json`);
+  const outPath = path.join(puzzlesDir, `${dateStr}-${lang}.json`);
   fs.writeFileSync(outPath, JSON.stringify(puzzle, null, 2));
   console.log(`✅ Saved puzzle to ${outPath}`);
   
+  // Only update index with the ID (without language suffix), 
+  // since the index is shared, and DailyRoute will append -en or -fr
   updateUnlimitedIndex(dateStr, difficulty, category);
 }
 
@@ -194,10 +201,12 @@ async function main() {
     .option('-a, --article <title>', 'Wikipedia article title (optional, picks random if omitted)')
     .option('-c, --category <category>', 'Category string', 'General')
     .option('-b, --batch <days>', 'Number of days to generate in batch', '1')
+    .option('-l, --lang <lang>', 'Language code (en or fr)', 'en')
     .parse(process.argv);
 
   const options = program.opts();
   const batchSize = parseInt(options.batch, 10);
+  const lang = options.lang as 'en' | 'fr';
   
   let currentDate = new Date(options.date);
   
@@ -208,7 +217,7 @@ async function main() {
     // otherwise the same article would be used for all 7 days!
     const article = (i === 0) ? options.article : null;
     
-    await generatePuzzle(dateStr, article, options.category);
+    await generatePuzzle(dateStr, article, options.category, lang);
     
     // Increment date by 1 day
     currentDate.setDate(currentDate.getDate() + 1);

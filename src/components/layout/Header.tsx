@@ -3,34 +3,41 @@
 
 import { useState } from 'react';
 import type { Puzzle } from '@features/game/types';
+import type { Settings } from '@features/settings/types';
+import { useTranslation } from '@/locales/index';
 
 interface HeaderProps {
   puzzle: Puzzle | null;
+  settings: Settings;
+  updateSettings: (partial: Partial<Settings>) => void;
   onOpenSettings: () => void;
   onOpenStats: () => void;
   onOpenArchive: () => void;
   onOpenUnlimited: () => void;
 }
 
-const DIFFICULTY_BADGE: Record<string, { label: string; color: string; emoji: string }> = {
-  straightforward: { label: 'Easy',       color: 'bg-blue-500/20 text-blue-300 border-blue-500/40',   emoji: '🔵' },
-  challenging:     { label: 'Challenging', color: 'bg-yellow-500/20 text-yellow-300 border-yellow-500/40', emoji: '🟡' },
-  obscure:         { label: 'Obscure',     color: 'bg-red-500/20 text-red-300 border-red-500/40',     emoji: '🔴' },
+const DIFFICULTY_BADGE: Record<string, { labelKey: string; color: string; emoji: string }> = {
+  straightforward: { labelKey: 'difficultyEasy',       color: 'bg-blue-500/20 text-blue-300 border-blue-500/40',   emoji: '🔵' },
+  challenging:     { labelKey: 'difficultyChallenging', color: 'bg-yellow-500/20 text-yellow-300 border-yellow-500/40', emoji: '🟡' },
+  obscure:         { labelKey: 'difficultyObscure',     color: 'bg-red-500/20 text-red-300 border-red-500/40',     emoji: '🔴' },
 };
 
 export const Header = ({
   puzzle,
+  settings,
+  updateSettings,
   onOpenSettings,
   onOpenStats,
   onOpenArchive,
   onOpenUnlimited,
 }: HeaderProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const t = useTranslation(settings.language);
 
   const badge = puzzle ? DIFFICULTY_BADGE[puzzle.difficulty] : null;
 
   const formattedDate = puzzle
-    ? new Date(puzzle.id + 'T00:00:00').toLocaleDateString('en-US', {
+    ? new Date(puzzle.id + 'T00:00:00').toLocaleDateString(settings.language === 'fr' ? 'fr-FR' : 'en-US', {
         month: 'long',
         day: 'numeric',
         year: 'numeric',
@@ -66,27 +73,39 @@ export const Header = ({
               {badge && (
                 <span
                   className={`rounded-full border px-2 py-0.5 text-xs font-medium ${badge.color}`}
-                  aria-label={`Difficulty: ${badge.label}`}
+                  aria-label={`${t('difficulty')}: ${t(badge.labelKey as any)}`}
                 >
-                  {badge.emoji} {badge.label}
+                  {badge.emoji} {t(badge.labelKey as any)}
                 </span>
               )}
             </div>
           )}
         </div>
 
-        {/* Stats button */}
-        <button
-          onClick={onOpenStats}
-          aria-label="View statistics"
-          className="rounded p-1 text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] focus-visible:outline-[var(--color-accent)]"
-        >
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-            <line x1="18" y1="20" x2="18" y2="10" />
-            <line x1="12" y1="20" x2="12" y2="4" />
-            <line x1="6"  y1="20" x2="6"  y2="14" />
-          </svg>
-        </button>
+        {/* Right side: Lang + Stats */}
+        <div className="flex items-center gap-2">
+          {/* Language toggle */}
+          <button
+            onClick={() => updateSettings({ language: settings.language === 'en' ? 'fr' : 'en' })}
+            aria-label="Toggle language"
+            className="rounded px-2 py-1 text-sm font-bold text-[var(--color-text-muted)] hover:bg-[var(--color-bg-tertiary)] hover:text-[var(--color-text-primary)] focus-visible:outline-[var(--color-accent)] uppercase"
+          >
+            {settings.language}
+          </button>
+
+          {/* Stats button */}
+          <button
+            onClick={onOpenStats}
+            aria-label="View statistics"
+            className="rounded p-1 text-[var(--color-text-muted)] hover:bg-[var(--color-bg-tertiary)] hover:text-[var(--color-text-primary)] focus-visible:outline-[var(--color-accent)]"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+              <line x1="18" y1="20" x2="18" y2="10" />
+              <line x1="12" y1="20" x2="12" y2="4" />
+              <line x1="6"  y1="20" x2="6"  y2="14" />
+            </svg>
+          </button>
+        </div>
       </div>
 
       {/* Dropdown navigation menu */}
@@ -97,9 +116,9 @@ export const Header = ({
         >
           <ul className="divide-y divide-[var(--color-border)]">
             {[
-              { label: '📅 Archive', action: onOpenArchive },
-              { label: '∞  Unlimited', action: onOpenUnlimited },
-              { label: '⚙️  Settings', action: onOpenSettings },
+              { label: `📅 ${t('archive')}`, action: onOpenArchive },
+              { label: `∞  ${t('unlimited')}`, action: onOpenUnlimited },
+              { label: `⚙️  ${t('settings')}`, action: onOpenSettings },
             ].map(({ label, action }) => (
               <li key={label}>
                 <button

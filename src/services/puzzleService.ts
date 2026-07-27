@@ -37,17 +37,28 @@ const fetchJson = async <T>(url: string): Promise<T> => {
  * Load today's daily puzzle.
  * Filename: /data/puzzles/YYYY-MM-DD.json
  */
-export const getDailyPuzzle = async (): Promise<Puzzle> => {
+export const getDailyPuzzle = async (lang: 'en' | 'fr' = 'en'): Promise<Puzzle> => {
   const id = getTodayId();
-  return fetchJson<Puzzle>(`${BASE_URL}/${id}.json`);
+  return getPuzzleById(id, lang);
 };
 
 /**
  * Load a specific puzzle by date ID (for archive and unlimited mode).
  * Filename: /data/puzzles/{id}.json
  */
-export const getPuzzleById = async (id: string): Promise<Puzzle> => {
-  return fetchJson<Puzzle>(`${BASE_URL}/${id}.json`);
+export const getPuzzleById = async (id: string, lang: 'en' | 'fr' = 'en'): Promise<Puzzle> => {
+  try {
+    return await fetchJson<Puzzle>(`${BASE_URL}/${id}-${lang}.json`);
+  } catch {
+    if (lang === 'fr') {
+      try {
+        return await fetchJson<Puzzle>(`${BASE_URL}/${id}-en.json`);
+      } catch {
+        // Fall through
+      }
+    }
+    return fetchJson<Puzzle>(`${BASE_URL}/${id}.json`);
+  }
 };
 
 /**
@@ -69,10 +80,13 @@ interface UnlimitedIndexEntry {
 /**
  * Load a random puzzle from the unlimited pool, optionally filtered.
  */
-export const getUnlimitedPuzzle = async (filters: {
-  difficulty: 'all' | Puzzle['difficulty'];
-  category: string;
-}): Promise<Puzzle> => {
+export const getUnlimitedPuzzle = async (
+  filters: {
+    difficulty: 'all' | Puzzle['difficulty'];
+    category: string;
+  },
+  lang: 'en' | 'fr' = 'en'
+): Promise<Puzzle> => {
   const index = await fetchJson<UnlimitedIndexEntry[]>(UNLIMITED_INDEX_URL);
 
   const filtered = index.filter((entry) => {
@@ -86,5 +100,5 @@ export const getUnlimitedPuzzle = async (filters: {
   }
 
   const random = filtered[Math.floor(Math.random() * filtered.length)];
-  return getPuzzleById(random.id);
+  return getPuzzleById(random.id, lang);
 };

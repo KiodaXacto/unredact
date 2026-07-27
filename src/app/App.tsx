@@ -33,6 +33,8 @@ export const App = () => {
       {/* ── Navigation header ───────────────────────────────────── */}
       <Header
         puzzle={currentPuzzle}
+        settings={settings}
+        updateSettings={updateSettings}
         onOpenSettings={() => openModal('settings')}
         onOpenStats={() => openModal('stats')}
         onOpenArchive={() => { void navigate('/archive'); }}
@@ -61,7 +63,7 @@ export const App = () => {
       {/* ── Stats modal ──────────────────────────────────────────── */}
       {activeModal === 'stats' && (
         <StatsModal
-          stats={loadStats()}
+          stats={loadStats(settings.language)}
           currentGameState={gameState ?? {
             puzzle: null,
             tokens: [],
@@ -74,6 +76,7 @@ export const App = () => {
             almostSolved: false,
             guessHistory: [],
             mode: 'daily',
+            language: settings.language,
             startedAt: null,
             solvedAt: null,
           }}

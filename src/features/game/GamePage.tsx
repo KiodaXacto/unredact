@@ -21,19 +21,23 @@ import {
 } from '@services/storageService';
 import { getTodayId } from '@services/puzzleService';
 
+import type { Settings } from '@features/settings/types';
+import { useTranslation } from '@/locales/index';
+
 interface GamePageProps {
   puzzle: Puzzle;
   mode: 'daily' | 'archive' | 'unlimited';
-  posColorsEnabled: boolean;
+  settings: Settings;
   onStateChange?: (state: GameState) => void;
 }
 
-export const GamePage = ({ puzzle, mode, posColorsEnabled, onStateChange }: GamePageProps) => {
+export const GamePage = ({ puzzle, mode, settings, onStateChange }: GamePageProps) => {
   const { state, loadPuzzle, submitGuess, useHint } = useGameState();
   const { toasts, addToast, dismissToast } = useToast();
   const [showOverlay, setShowOverlay] = useState(false);
   const [articleReader, setArticleReader] = useState(false);
   const [previousGuessCount, setPreviousGuessCount] = useState(0);
+  const t = useTranslation(settings.language);
 
   // Notify parent of state changes (for stats modal)
   useEffect(() => {
@@ -42,10 +46,10 @@ export const GamePage = ({ puzzle, mode, posColorsEnabled, onStateChange }: Game
 
   // Load puzzle on mount (or when puzzle changes)
   useEffect(() => {
-    const savedState = mode === 'daily' ? loadDailyProgress(puzzle.id) : null;
-    loadPuzzle(puzzle, mode, savedState ?? undefined);
+    const savedState = mode === 'daily' ? loadDailyProgress(puzzle.id, settings.language) : null;
+    loadPuzzle(puzzle, mode, settings.language, savedState ?? undefined);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [puzzle.id, mode]);
+  }, [puzzle.id, mode, settings.language]);
 
   // Show post-solve overlay when solved
   useEffect(() => {
@@ -61,14 +65,14 @@ export const GamePage = ({ puzzle, mode, posColorsEnabled, onStateChange }: Game
   useEffect(() => {
     if (mode === 'daily' && state.puzzle && state.guessHistory.length > 0) {
       const serialized = serializeState(state);
-      if (serialized) saveDailyProgress(puzzle.id, serialized);
+      if (serialized) saveDailyProgress(puzzle.id, serialized, settings.language);
     }
-  }, [state.guessHistory.length, mode, puzzle.id, state]);
+  }, [state.guessHistory.length, mode, puzzle.id, state, settings.language]);
 
   // Update statistics when solved
   useEffect(() => {
     if (state.solved && mode === 'daily') {
-      const stats = loadStats();
+      const stats = loadStats(settings.language);
       const today = getTodayId();
       const score = computeScore(state);
 
@@ -101,7 +105,7 @@ export const GamePage = ({ puzzle, mode, posColorsEnabled, onStateChange }: Game
               : 0,
           },
         ],
-      });
+      }, settings.language);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.solved]);
@@ -114,14 +118,14 @@ export const GamePage = ({ puzzle, mode, posColorsEnabled, onStateChange }: Game
 
     const latest = history[history.length - 1];
     if (latest.isTitle) {
-      addToast(`🏆 Solved! The article is: ${state.puzzle?.title || latest.word}`, 'success');
+      addToast(t('solvedToast', { title: state.puzzle?.title || latest.word }), 'success');
     } else if (latest.isAlternate) {
-      addToast(`🎯 Almost! You've found the subject. Try the full title.`, 'warning');
+      addToast(t('alternateToast'), 'warning');
     } else if (latest.revealCount > 0) {
-      addToast(`✓ "${latest.word}" revealed ×${latest.revealCount}`, 'success');
+      addToast(t('revealToast', { word: latest.word, count: latest.revealCount }), 'success');
     }
     // No toast for misses — too noisy
-  }, [state.guessHistory.length, state.guessHistory, previousGuessCount, addToast]);
+  }, [state.guessHistory.length, state.guessHistory, previousGuessCount, addToast, state.puzzle?.title, t]);
 
   const score = computeScore(state);
   const lastGuess = state.guessHistory[state.guessHistory.length - 1] ?? null;
@@ -134,7 +138,7 @@ export const GamePage = ({ puzzle, mode, posColorsEnabled, onStateChange }: Game
   if (state.tokens.length === 0) {
     return (
       <div className="flex min-h-screen items-center justify-center">
-        <div className="text-[var(--color-text-muted)]">Loading puzzle…</div>
+        <div className="text-[var(--color-text-muted)]">{t('loadingPuzzle')}</div>
       </div>
     );
   }
@@ -146,10 +150,11 @@ export const GamePage = ({ puzzle, mode, posColorsEnabled, onStateChange }: Game
         {/* Hint panel (Lumen) */}
         {state.puzzle && (
           <HintPanel
-            guessCount={state.guessHistory.length}
+            guessCount={score.guessCount}
             hintsUsed={state.hintsUsed}
-            puzzle={state.puzzle}
+            puzzle={puzzle}
             onUseHint={useHint}
+            language={settings.language}
           />
         )}
 
@@ -160,7 +165,7 @@ export const GamePage = ({ puzzle, mode, posColorsEnabled, onStateChange }: Game
               const text = match[0];
               const isWhitespace = /^\s+$/.test(text);
               const isPunctuation = !isWhitespace && /^[^a-zA-Z0-9À-ÿ]+$/.test(text);
-              const isStop = isWhitespace || isPunctuation ? false : isStopWord(text);
+              const isStop = isWhitespace || isPunctuation ? false : isStopWord(text, settings.language);
               
               let revealed = state.solved || isWhitespace || isPunctuation || isStop;
               if (!revealed) {
@@ -178,7 +183,7 @@ export const GamePage = ({ puzzle, mode, posColorsEnabled, onStateChange }: Game
                   isWhitespace={isWhitespace}
                   isParagraphBreak={false}
                   revealed={revealed}
-                  posColorsEnabled={posColorsEnabled}
+                  posColorsEnabled={settings.posColorsEnabled}
                 />
               );
             })}
@@ -188,12 +193,12 @@ export const GamePage = ({ puzzle, mode, posColorsEnabled, onStateChange }: Game
         {/* Article */}
         <ArticleRenderer
           tokens={state.tokens}
-          posColorsEnabled={posColorsEnabled}
+          posColorsEnabled={settings.posColorsEnabled}
         />
 
         {/* Guess history */}
         <div className="mt-8">
-          <GuessHistory history={state.guessHistory} />
+          <GuessHistory history={state.guessHistory} language={settings.language} />
         </div>
       </main>
 
@@ -204,6 +209,7 @@ export const GamePage = ({ puzzle, mode, posColorsEnabled, onStateChange }: Game
         guessCount={score.guessCount}
         revealedPercent={score.revealedPercent}
         solved={state.solved}
+        language={settings.language}
       />
 
       {/* Post-solve overlay */}

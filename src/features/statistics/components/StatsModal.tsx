@@ -4,6 +4,7 @@
 import { Modal } from '@components/ui/Modal';
 import type { Statistics } from '@features/statistics/types';
 import type { GameState } from '@features/game/types';
+import { useTranslation } from '@/locales/index';
 import { computeScore, generateShareText } from '@features/game/utils/gameEngine';
 
 interface StatsModalProps {
@@ -50,6 +51,7 @@ export const StatsModal = ({ stats, currentGameState, onClose }: StatsModalProps
     ? Math.round((stats.gamesWon / stats.gamesPlayed) * 100)
     : 0;
 
+  const t = useTranslation(currentGameState.language);
   const score = computeScore(currentGameState);
 
   const handleShare = async () => {
@@ -66,14 +68,14 @@ export const StatsModal = ({ stats, currentGameState, onClose }: StatsModalProps
   };
 
   return (
-    <Modal id="stats" title="Statistics" onClose={onClose}>
+    <Modal id="stats" title={t('statsTitle')} onClose={onClose} closeLabel={t('closeLabel')}>
       <div className="flex flex-col gap-6">
         {/* Stats grid */}
         <div className="grid grid-cols-4 gap-2">
-          <StatCard value={stats.gamesPlayed} label="Played" />
-          <StatCard value={stats.gamesWon} label="Won" />
-          <StatCard value={stats.currentStreak} label="🔥 Streak" />
-          <StatCard value={stats.bestStreak} label="Best" />
+          <StatCard value={stats.gamesPlayed} label={t('gamesPlayed')} />
+          <StatCard value={stats.gamesWon} label={t('gamesWon')} />
+          <StatCard value={stats.currentStreak} label={`🔥 ${t('currentStreak')}`} />
+          <StatCard value={stats.bestStreak} label={t('bestStreak')} />
         </div>
 
         {/* Win rate bar */}
@@ -82,22 +84,19 @@ export const StatsModal = ({ stats, currentGameState, onClose }: StatsModalProps
         {/* Today's result (if solved) */}
         {currentGameState.solved && (
           <div className="rounded-xl border border-[var(--color-accent)]/30 bg-[var(--color-accent)]/10 p-4">
-            <p className="mb-2 text-sm font-semibold text-[var(--color-accent)]">
-              🏆 Today's Result
-            </p>
             <div className="flex gap-4 text-sm">
               <span>
                 <strong className="text-[var(--color-text-primary)]">{score.guessCount}</strong>{' '}
-                <span className="text-[var(--color-text-muted)]">guesses</span>
+                <span className="text-[var(--color-text-muted)]">{t('guesses').toLowerCase()}</span>
               </span>
               <span>
                 <strong className="text-[var(--color-text-primary)]">{score.revealedPercent}%</strong>{' '}
-                <span className="text-[var(--color-text-muted)]">revealed</span>
+                <span className="text-[var(--color-text-muted)]">{t('revealed').toLowerCase()}</span>
               </span>
               {score.hintsUsedCount > 0 && (
                 <span>
                   <strong className="text-[var(--color-text-primary)]">💡{score.hintsUsedCount}</strong>{' '}
-                  <span className="text-[var(--color-text-muted)]">hints</span>
+                  <span className="text-[var(--color-text-muted)]">{t('hints').toLowerCase()}</span>
                 </span>
               )}
             </div>
@@ -110,14 +109,14 @@ export const StatsModal = ({ stats, currentGameState, onClose }: StatsModalProps
             onClick={() => void handleShare()}
             className="w-full rounded-xl bg-[var(--color-accent)] py-3 font-semibold text-[var(--color-text-inverse)] transition-all hover:brightness-110 active:scale-95"
           >
-            Share Result
+            {t('shareText')}
           </button>
         )}
 
         {/* No games yet placeholder */}
         {stats.gamesPlayed === 0 && (
           <p className="text-center text-sm text-[var(--color-text-muted)]">
-            Complete your first puzzle to start tracking statistics.
+            {t('noStats')}
           </p>
         )}
       </div>

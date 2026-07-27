@@ -13,12 +13,12 @@ const STORAGE_VERSION = 1;
 
 const KEYS = {
   version:        'unredact:version',
-  dailyProgress:  (date: string) => `unredact:daily:progress:${date}`,
-  archiveProgress:(id: string)   => `unredact:archive:progress:${id}`,
-  unlimitedProg:  (id: string)   => `unredact:unlimited:progress:${id}`,
-  stats:          'unredact:stats',
+  dailyProgress:  (date: string, lang: string) => `unredact:daily:progress:${date}${lang === 'en' ? '' : '_' + lang}`,
+  archiveProgress:(id: string, lang: string)   => `unredact:archive:progress:${id}${lang === 'en' ? '' : '_' + lang}`,
+  unlimitedProg:  (id: string, lang: string)   => `unredact:unlimited:progress:${id}${lang === 'en' ? '' : '_' + lang}`,
+  stats:          (lang: string) => `unredact:stats${lang === 'en' ? '' : '_' + lang}`,
   settings:       'unredact:settings',
-  archivePlayed:  'unredact:archive:played',
+  archivePlayed:  (lang: string) => `unredact:archive:played${lang === 'en' ? '' : '_' + lang}`,
 } as const;
 
 // ── Generic helpers ───────────────────────────────────────────────
@@ -44,19 +44,19 @@ const set = <T>(key: string, value: T): void => {
 
 // ── Progress persistence ──────────────────────────────────────────
 
-export const saveDailyProgress = (date: string, state: SerializableGameState): void => {
-  set(KEYS.dailyProgress(date), state);
+export const saveDailyProgress = (date: string, state: SerializableGameState, lang: string = 'en'): void => {
+  set(KEYS.dailyProgress(date, lang), state);
 };
 
-export const loadDailyProgress = (date: string): SerializableGameState | null =>
-  get<SerializableGameState | null>(KEYS.dailyProgress(date), null);
+export const loadDailyProgress = (date: string, lang: string = 'en'): SerializableGameState | null =>
+  get<SerializableGameState | null>(KEYS.dailyProgress(date, lang), null);
 
-export const saveArchiveProgress = (id: string, state: SerializableGameState): void => {
-  set(KEYS.archiveProgress(id), state);
+export const saveArchiveProgress = (id: string, state: SerializableGameState, lang: string = 'en'): void => {
+  set(KEYS.archiveProgress(id, lang), state);
 };
 
-export const loadArchiveProgress = (id: string): SerializableGameState | null =>
-  get<SerializableGameState | null>(KEYS.archiveProgress(id), null);
+export const loadArchiveProgress = (id: string, lang: string = 'en'): SerializableGameState | null =>
+  get<SerializableGameState | null>(KEYS.archiveProgress(id, lang), null);
 
 // ── Statistics ────────────────────────────────────────────────────
 
@@ -69,11 +69,11 @@ const DEFAULT_STATS: Statistics = {
   history: [],
 };
 
-export const loadStats = (): Statistics =>
-  get<Statistics>(KEYS.stats, DEFAULT_STATS);
+export const loadStats = (lang: string = 'en'): Statistics =>
+  get<Statistics>(KEYS.stats(lang), DEFAULT_STATS);
 
-export const saveStats = (stats: Statistics): void => {
-  set(KEYS.stats, stats);
+export const saveStats = (stats: Statistics, lang: string = 'en'): void => {
+  set(KEYS.stats(lang), stats);
 };
 
 // ── Settings ──────────────────────────────────────────────────────
@@ -87,15 +87,15 @@ export const saveSettings = (settings: Settings): void => {
 
 // ── Archive played tracking ───────────────────────────────────────
 
-export const loadArchivePlayed = (): Set<string> => {
-  const arr = get<string[]>(KEYS.archivePlayed, []);
+export const loadArchivePlayed = (lang: string = 'en'): Set<string> => {
+  const arr = get<string[]>(KEYS.archivePlayed(lang), []);
   return new Set(arr);
 };
 
-export const markArchivePlayed = (id: string): void => {
-  const played = loadArchivePlayed();
+export const markArchivePlayed = (id: string, lang: string = 'en'): void => {
+  const played = loadArchivePlayed(lang);
   played.add(id);
-  set(KEYS.archivePlayed, Array.from(played));
+  set(KEYS.archivePlayed(lang), Array.from(played));
 };
 
 // ── Storage migration ─────────────────────────────────────────────

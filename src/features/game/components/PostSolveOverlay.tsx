@@ -5,6 +5,7 @@
 import { useEffect, useRef } from 'react';
 import type { GameState } from '@features/game/types';
 import { computeScore, generateShareText } from '@features/game/utils/gameEngine';
+import { useTranslation } from '@/locales/index';
 
 interface PostSolveOverlayProps {
   state: GameState;
@@ -15,6 +16,7 @@ interface PostSolveOverlayProps {
 export const PostSolveOverlay = ({ state, onClose, onReadArticle }: PostSolveOverlayProps) => {
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const score = computeScore(state);
+  const t = useTranslation(state.language);
 
   // Focus the close button when overlay opens
   useEffect(() => {
@@ -80,14 +82,14 @@ export const PostSolveOverlay = ({ state, onClose, onReadArticle }: PostSolveOve
         {/* Score */}
         <div className="mb-6 flex justify-center gap-6 text-sm text-[var(--color-text-muted)]">
           <span>
-            <strong className="text-[var(--color-text-primary)]">{score.guessCount}</strong> guesses
+            <strong className="text-[var(--color-text-primary)]">{score.guessCount}</strong> {t('guesses').toLowerCase()}
           </span>
           <span>
-            <strong className="text-[var(--color-text-primary)]">{score.revealedPercent}%</strong> revealed
+            <strong className="text-[var(--color-text-primary)]">{score.revealedPercent}%</strong> {t('revealed').toLowerCase()}
           </span>
           {score.hintsUsedCount > 0 && (
             <span>
-              <strong className="text-[var(--color-text-primary)]">💡{score.hintsUsedCount}</strong> hint{score.hintsUsedCount > 1 ? 's' : ''}
+              <strong className="text-[var(--color-text-primary)]">💡{score.hintsUsedCount}</strong> {t('hints').toLowerCase()}
             </span>
           )}
         </div>
@@ -98,14 +100,14 @@ export const PostSolveOverlay = ({ state, onClose, onReadArticle }: PostSolveOve
             onClick={onReadArticle}
             className="w-full rounded-xl bg-[var(--color-accent)] py-3 font-semibold text-[var(--color-text-inverse)] transition-all hover:brightness-110 active:scale-95"
           >
-            Read the Full Article
+            {t('theArticleWas')}
           </button>
 
           <button
             onClick={() => void handleShare()}
             className="w-full rounded-xl border border-[var(--color-border)] py-3 font-semibold text-[var(--color-text-primary)] transition-all hover:bg-[var(--color-bg-secondary)] active:scale-95"
           >
-            Share Result
+            {t('shareText')}
           </button>
 
           <button
@@ -113,7 +115,7 @@ export const PostSolveOverlay = ({ state, onClose, onReadArticle }: PostSolveOve
             onClick={onClose}
             className="w-full py-2 text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]"
           >
-            ✕ View Revealed Article
+            ✕ {t('close')}
           </button>
         </div>
       </div>

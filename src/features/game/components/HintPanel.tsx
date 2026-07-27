@@ -3,6 +3,7 @@
 
 import type { HintLevel } from '@features/game/types';
 import { getAvailableHints, HINT_THRESHOLDS } from '@features/game/utils/gameEngine';
+import { useTranslation } from '@/locales/index';
 
 interface HintPanelProps {
   guessCount: number;
@@ -14,6 +15,7 @@ interface HintPanelProps {
     difficulty: string;
   };
   onUseHint: (level: HintLevel) => void;
+  language: 'en' | 'fr';
 }
 
 const HINT_META: Record<HintLevel, { label: string; icon: string; description: string }> = {
@@ -27,7 +29,9 @@ export const HintPanel = ({
   hintsUsed,
   puzzle,
   onUseHint,
+  language,
 }: HintPanelProps) => {
+  const t = useTranslation(language);
   const allLevels: HintLevel[] = [1, 2, 3];
   const available = getAvailableHints(guessCount, hintsUsed);
 
@@ -37,8 +41,8 @@ export const HintPanel = ({
 
   const getHintContent = (level: HintLevel): string => {
     if (!hintsUsed.includes(level)) return '';
-    if (level === 1) return `First letter: ${puzzle.firstLetter.toUpperCase()}`;
-    if (level === 2) return `Category: ${puzzle.category}`;
+    if (level === 1) return `${t('hintLevel1')}: ${puzzle.firstLetter.toUpperCase()}`;
+    if (level === 2) return `${t('hintLevel2')}: ${puzzle.category}`;
     if (level === 3) return puzzle.sampleSentence;
     return '';
   };
@@ -50,9 +54,9 @@ export const HintPanel = ({
     >
       <div className="mb-3 flex items-center gap-2">
         <span className="text-lg" aria-hidden="true">💡</span>
-        <span className="text-sm font-semibold text-amber-400">Lumen Hints</span>
+        <span className="text-sm font-semibold text-amber-400">Lumen {t('hints')}</span>
         <span className="ml-auto text-xs text-[var(--color-text-muted)]">
-          {hintsUsed.length}/3 used
+          {hintsUsed.length}/3 {t('hintLevelUsed').toLowerCase()}
         </span>
       </div>
 
@@ -80,11 +84,11 @@ export const HintPanel = ({
                   <span aria-hidden="true">{meta.icon}</span>
                   <div>
                     <span className="text-sm font-medium text-[var(--color-text-primary)]">
-                      {meta.label}
+                      {t(`hintLevel${level}` as any)}
                     </span>
                     {isLocked && (
                       <p className="text-xs text-[var(--color-text-muted)]">
-                        Unlocks after {HINT_THRESHOLDS[level]} guesses
+                        {t('hintUnlock', { count: HINT_THRESHOLDS[level] })}
                       </p>
                     )}
                   </div>
@@ -96,12 +100,12 @@ export const HintPanel = ({
                     className="shrink-0 rounded-lg bg-amber-500 px-3 py-1 text-xs font-semibold text-white transition-all hover:bg-amber-400 active:scale-95"
                     aria-label={`Use hint: ${meta.label}`}
                   >
-                    Reveal
+                    {t('hintLevelUsed')}
                   </button>
                 )}
 
                 {isUsed && (
-                  <span className="text-xs text-amber-400">Used</span>
+                  <span className="text-xs text-amber-400">{t('hintLevelUsed')}</span>
                 )}
               </div>
 

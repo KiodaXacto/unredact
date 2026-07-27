@@ -3,6 +3,8 @@
 // Words in this set are always visible in the article (never redacted).
 // Case-insensitive — compare against lowercased tokens.
 
+import { STOP_WORDS_FR } from './stopWordsFr';
+
 export const STOP_WORDS: ReadonlySet<string> = new Set([
   // Articles
   'a', 'an', 'the',
@@ -60,5 +62,15 @@ export const STOP_WORDS: ReadonlySet<string> = new Set([
  * Returns true if the given word (lowercased) is a stop word.
  * Used at puzzle load time to mark tokens; not called per-render.
  */
-export const isStopWord = (word: string): boolean =>
-  STOP_WORDS.has(word.toLowerCase());
+export function isStopWord(word: string, lang: 'en' | 'fr' = 'en'): boolean {
+  if (!word) return false;
+  const lower = word.toLowerCase();
+  
+  if (lang === 'fr') {
+    // Strip apostrophes at the end of prefixes (e.g. "l'")
+    const cleanWord = lower.replace(/'$/, '');
+    return STOP_WORDS_FR.has(cleanWord);
+  }
+  
+  return STOP_WORDS.has(lower);
+}

@@ -8,9 +8,10 @@ interface ModalProps {
   title: string;
   onClose: () => void;
   children: ReactNode;
+  closeLabel?: string;
 }
 
-export const Modal = ({ id, title, onClose, children }: ModalProps) => {
+export const Modal = ({ id, title, onClose, children, closeLabel }: ModalProps) => {
   const overlayRef = useRef<HTMLDivElement>(null);
   const titleId = `${id}-title`;
 
@@ -56,7 +57,7 @@ export const Modal = ({ id, title, onClose, children }: ModalProps) => {
           </h2>
           <button
             onClick={onClose}
-            aria-label="Close dialog"
+            aria-label={closeLabel ?? 'Close dialog'}
             className="rounded p-1 text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text-primary)] focus-visible:outline-[var(--color-accent)]"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">

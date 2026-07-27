@@ -10,6 +10,7 @@ import { loadArchivePlayed, markArchivePlayed } from '@services/storageService';
 import type { ArchiveEntry } from '@features/archive/types';
 import type { Puzzle, GameState } from '@features/game/types';
 import type { Settings } from '@features/settings/types';
+import { useTranslation } from '@/locales/index';
 
 interface OutletContext {
   settings: Settings;
@@ -25,6 +26,7 @@ export const ArchivePage = () => {
   const [selectedPuzzle, setSelectedPuzzle] = useState<Puzzle | null>(null);
   const [loadingPuzzle, setLoadingPuzzle] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const t = useTranslation(settings.language);
 
   useEffect(() => {
     getArchiveIndex()
@@ -47,7 +49,7 @@ export const ArchivePage = () => {
     setLoadingPuzzle(true);
     setError(null);
     try {
-      const puzzle = await getPuzzleById(entry.id);
+      const puzzle = await getPuzzleById(entry.id, settings.language);
       setSelectedPuzzle(puzzle);
       setCurrentPuzzle(puzzle);
       markArchivePlayed(entry.id);
@@ -75,14 +77,14 @@ export const ArchivePage = () => {
               onClick={handleBack}
               className="flex items-center gap-1 text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]"
             >
-              ← Back to Archive
+              {t('backToArchive')}
             </button>
           </div>
         </div>
         <GamePage
           puzzle={selectedPuzzle}
           mode="archive"
-          posColorsEnabled={settings.posColorsEnabled}
+          settings={settings}
           onStateChange={setGameState}
         />
       </div>
@@ -91,9 +93,9 @@ export const ArchivePage = () => {
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-8">
-      <h1 className="mb-1 text-2xl font-bold text-[var(--color-text-primary)]">Archive</h1>
+      <h1 className="mb-1 text-2xl font-bold text-[var(--color-text-primary)]">{t('archive')}</h1>
       <p className="mb-6 text-sm text-[var(--color-text-muted)]">
-        Play any past daily puzzle at your own pace.
+        {t('archiveDesc', { fallback: 'Play any past daily puzzle at your own pace.' })}
       </p>
 
       {loading && (
@@ -115,7 +117,7 @@ export const ArchivePage = () => {
       )}
 
       {!loading && entries.length === 0 && !error && (
-        <p className="text-center text-[var(--color-text-muted)]">No past puzzles available yet.</p>
+        <p className="text-center text-[var(--color-text-muted)]">{t('noArchivePuzzles')}</p>
       )}
 
       {!loading && entries.length > 0 && (

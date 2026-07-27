@@ -3,9 +3,11 @@
 // Uses CSS contain: content for performance with long lists.
 
 import type { GuessRecord } from '@features/game/types';
+import { useTranslation } from '@/locales/index';
 
 interface GuessHistoryProps {
   history: GuessRecord[];
+  language: 'en' | 'fr';
 }
 
 const getRowStyle = (entry: GuessRecord): string => {
@@ -21,11 +23,13 @@ const getIcon = (entry: GuessRecord): string => {
   return '⬛';
 };
 
-export const GuessHistory = ({ history }: GuessHistoryProps) => {
+export const GuessHistory = ({ history, language }: GuessHistoryProps) => {
+  const t = useTranslation(language);
+
   if (history.length === 0) {
     return (
       <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-4 text-center text-sm text-[var(--color-text-muted)]">
-        No guesses yet. Start typing!
+        {t('noGuessesYet')}
       </div>
     );
   }
@@ -50,16 +54,16 @@ export const GuessHistory = ({ history }: GuessHistoryProps) => {
               <span aria-hidden="true">{getIcon(entry)}</span>
               <span className="font-medium">{entry.word}</span>
               {entry.isAlternate && (
-                <span className="text-xs text-amber-400">(close!)</span>
+                <span className="text-xs text-amber-400">({t('closeGuess')})</span>
               )}
             </span>
 
             <span className="tabular-nums text-xs">
               {entry.isTitle
-                ? 'solved'
+                ? t('solvedLabel')
                 : entry.revealCount > 0
                 ? `×${entry.revealCount}`
-                : 'not found'}
+                : t('notFoundLabel')}
             </span>
           </li>
         ))}
@@ -67,7 +71,7 @@ export const GuessHistory = ({ history }: GuessHistoryProps) => {
 
       {history.length > 0 && (
         <div className="border-t border-[var(--color-border)] px-4 py-2 text-xs text-[var(--color-text-muted)]">
-          {history.length} guess{history.length === 1 ? '' : 'es'} total
+          {t('guessesTotal', { count: history.length, plural: history.length === 1 ? '' : 's' })}
         </div>
       )}
     </div>

@@ -7,6 +7,7 @@ import { GamePage } from '@features/game/GamePage';
 import { getUnlimitedPuzzle } from '@services/puzzleService';
 import type { Puzzle, GameState, UnlimitedFilters } from '@features/game/types';
 import type { Settings } from '@features/settings/types';
+import { useTranslation } from '@/locales/index';
 
 interface OutletContext {
   settings: Settings;
@@ -23,12 +24,13 @@ export const UnlimitedPage = () => {
     difficulty: 'all',
     category: 'all',
   });
+  const t = useTranslation(settings.language);
 
   const loadPuzzle = useCallback(async () => {
     setLoading(true);
     setError(null);
     try {
-      const p = await getUnlimitedPuzzle(filters);
+      const p = await getUnlimitedPuzzle(filters, settings.language);
       setPuzzle(p);
       setCurrentPuzzle(p);
     } catch (err: unknown) {
@@ -36,7 +38,7 @@ export const UnlimitedPage = () => {
     } finally {
       setLoading(false);
     }
-  }, [filters, setCurrentPuzzle]);
+  }, [filters, setCurrentPuzzle, settings.language]);
 
   const handleNewPuzzle = () => {
     setPuzzle(null);
@@ -54,20 +56,20 @@ export const UnlimitedPage = () => {
               onClick={handleNewPuzzle}
               className="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]"
             >
-              ← New Puzzle
+              {t('newPuzzle')}
             </button>
             <button
               onClick={() => { void loadPuzzle(); handleNewPuzzle(); }}
               className="text-sm font-medium text-[var(--color-accent)] hover:brightness-110"
             >
-              Skip →
+              {t('skip')}
             </button>
           </div>
         </div>
         <GamePage
           puzzle={puzzle}
           mode="unlimited"
-          posColorsEnabled={settings.posColorsEnabled}
+          settings={settings}
           onStateChange={setGameState}
         />
       </div>
@@ -76,26 +78,26 @@ export const UnlimitedPage = () => {
 
   // ── Puzzle picker view ──────────────────────────────────────────
   const DIFFICULTIES = [
-    { value: 'all', label: 'Any' },
-    { value: 'straightforward', label: '🔵 Easy' },
-    { value: 'challenging', label: '🟡 Challenging' },
-    { value: 'obscure', label: '🔴 Obscure' },
+    { value: 'all', label: t('difficultyAny') },
+    { value: 'straightforward', label: `🔵 ${t('difficultyEasy')}` },
+    { value: 'challenging', label: `🟡 ${t('difficultyChallenging')}` },
+    { value: 'obscure', label: `🔴 ${t('difficultyObscure')}` },
   ] as const;
 
   return (
     <main className="mx-auto max-w-xl px-4 py-16">
       <div className="text-center">
         <p className="mb-2 text-4xl" aria-hidden="true">∞</p>
-        <h1 className="mb-2 text-2xl font-bold text-[var(--color-text-primary)]">Unlimited Mode</h1>
+        <h1 className="mb-2 text-2xl font-bold text-[var(--color-text-primary)]">{t('unlimited')}</h1>
         <p className="mb-8 text-sm text-[var(--color-text-muted)]">
-          Play any puzzle from our archive, any time, with no limits.
+          {t('unlimitedDesc')}
         </p>
       </div>
 
       {/* Difficulty filter */}
       <div className="mb-6">
         <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-[var(--color-text-muted)]">
-          Difficulty
+          {t('difficulty')}
         </p>
         <div className="grid grid-cols-4 gap-2">
           {DIFFICULTIES.map((d) => (
@@ -129,10 +131,10 @@ export const UnlimitedPage = () => {
         {loading ? (
           <span className="flex items-center justify-center gap-2">
             <span className="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent" />
-            Loading…
+            {t('loadingArchive')}
           </span>
         ) : (
-          'Start Random Puzzle'
+          t('startRandomPuzzle')
         )}
       </button>
     </main>

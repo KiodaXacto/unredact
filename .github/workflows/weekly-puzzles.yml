@@ -32,7 +32,8 @@ jobs:
           # Use next Monday as the start date if run on Sunday, or just today if run manually
           START_DATE=$(date -d "tomorrow" +%Y-%m-%d)
           echo "Generating 7 puzzles starting from $START_DATE"
-          npx tsx tools/pipeline/generate-puzzle.ts --date $START_DATE --batch 7
+          npx tsx tools/pipeline/generate-puzzle.ts --date $START_DATE --batch 7 --lang en
+          npx tsx tools/pipeline/generate-puzzle.ts --date $START_DATE --batch 7 --lang fr
           
       - name: Commit and push changes
         run: |
