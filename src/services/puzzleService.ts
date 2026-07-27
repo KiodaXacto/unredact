@@ -66,7 +66,10 @@ export const getPuzzleById = async (id: string, lang: 'en' | 'fr' = 'en'): Promi
  * Used to render the archive calendar.
  */
 export const getArchiveIndex = async (): Promise<ArchiveEntry[]> => {
-  return fetchJson<ArchiveEntry[]>(`${ARCHIVE_INDEX_URL}?t=${Date.now()}`);
+  const index = await fetchJson<ArchiveEntry[]>(`${ARCHIVE_INDEX_URL}?t=${Date.now()}`);
+  const today = getTodayId();
+  // Only show puzzles up to today's date
+  return index.filter(entry => entry.id <= today);
 };
 
 // ── Unlimited mode ────────────────────────────────────────────────
