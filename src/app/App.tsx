@@ -38,7 +38,6 @@ export const App = () => {
         onOpenSettings={() => openModal('settings')}
         onOpenStats={() => openModal('stats')}
         onOpenArchive={() => { void navigate('/archive'); }}
-        onOpenUnlimited={() => { void navigate('/unlimited'); }}
       />
 
       {/* ── Page content ────────────────────────────────────────── */}

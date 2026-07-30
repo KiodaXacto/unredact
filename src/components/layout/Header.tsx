@@ -13,7 +13,7 @@ interface HeaderProps {
   onOpenSettings: () => void;
   onOpenStats: () => void;
   onOpenArchive: () => void;
-  onOpenUnlimited: () => void;
+  // onOpenUnlimited removed — unlimited mode disabled (exposes future puzzles)
 }
 
 const DIFFICULTY_BADGE: Record<string, { labelKey: string; color: string; emoji: string }> = {
@@ -29,7 +29,6 @@ export const Header = ({
   onOpenSettings,
   onOpenStats,
   onOpenArchive,
-  onOpenUnlimited,
 }: HeaderProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const t = useTranslation(settings.language);
@@ -117,7 +116,6 @@ export const Header = ({
           <ul className="divide-y divide-[var(--color-border)]">
             {[
               { label: `📅 ${t('archive')}`, action: onOpenArchive },
-              { label: `∞  ${t('unlimited')}`, action: onOpenUnlimited },
               { label: `⚙️  ${t('settings')}`, action: onOpenSettings },
             ].map(({ label, action }) => (
               <li key={label}>

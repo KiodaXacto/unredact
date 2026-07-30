@@ -2,7 +2,7 @@
 // React Router v6 route configuration with lazy-loaded feature pages.
 
 import { lazy, Suspense } from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 import { App } from './App';
 import { DailyGameRoute } from './routes/DailyGameRoute';
 
@@ -11,9 +11,8 @@ const ArchivePage = lazy(() =>
   import('@features/archive/ArchivePage').then((m) => ({ default: m.ArchivePage }))
 );
 
-const UnlimitedPage = lazy(() =>
-  import('@features/unlimited/UnlimitedPage').then((m) => ({ default: m.UnlimitedPage }))
-);
+// UnlimitedPage disabled — it exposes future puzzles.
+// The route below redirects to home instead.
 
 // Loading fallback for lazy routes
 const RouteLoader = () => (
@@ -48,12 +47,9 @@ const router = createBrowserRouter([
         ),
       },
       {
+        // Unlimited mode disabled — redirect to home
         path: 'unlimited',
-        element: (
-          <Suspense fallback={<RouteLoader />}>
-            <UnlimitedPage />
-          </Suspense>
-        ),
+        element: <Navigate to="/" replace />,
       },
     ],
   },
