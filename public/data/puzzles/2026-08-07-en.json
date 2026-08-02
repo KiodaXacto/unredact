@@ -1,21 +1,21 @@
 {
-  "id": "2026-08-03",
-  "title": "Wizja Jeden",
-  "normalizedTitle": "wizja jeden",
+  "id": "2026-08-07",
+  "title": "Malika Kishino",
+  "normalizedTitle": "malika kishino",
   "alternateTitles": [
-    "wizja"
+    "malika"
   ],
   "category": "General",
   "difficulty": "obscure",
-  "firstLetter": "W",
-  "sampleSentence": "Wizja Jeden was a Polish television channel that was launched on April 1, 1998.",
-  "fullTextRaw": "Wizja Jeden was a Polish television channel that was launched on April 1, 1998. The channel was available on Wizja TV and some cable networks. The channel showed comedy related programs. The channel also commissioned dubbed versions of some programs such as South Park, Beavis and Butt-head, and others.\n\nIn addition to films, series and programs, the channel also broadcast events from concerts, sporting events and other events such as the Golden Globe Award.\n\nThe channel also carried sporting events since the beginning.",
+  "firstLetter": "M",
+  "sampleSentence": "Malika Kishino (Japanese: 岸野 末利加, Kishino Marika; born July 16, 1971) is a Japanese composer based in Cologne, Germany..",
+  "fullTextRaw": "Malika Kishino (Japanese: 岸野 末利加, Kishino Marika; born July 16, 1971) is a Japanese composer based in Cologne, Germany.\n\nMalika Kishino was born in Kyoto 1971. She studied law in Doshisha University then came to France in 1995 to study composition. She studied at École Normale de Musique de Paris with Yoshihisa Taira, at Conservatoire national supérieur de musique et de danse de Lyon with Robert Pascal and at the Institute for Research and Coordination Acoustic (IRCAM) with Philippe Leroux. She moved to Cologne in 2006. Her works are published by Edizioni Suvini Zerboni in Milan.\n\nMusic for choir\n\nMusic with voice",
   "categoriesList": [
     "General"
   ],
   "tokens": [
     {
-      "text": "Wizja",
+      "text": "Malika",
       "pos": "NNP",
       "isStopWord": false,
       "isPunctuation": false
@@ -27,7 +27,31 @@
       "isPunctuation": false
     },
     {
-      "text": "Jeden",
+      "text": "Kishino",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " (",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Japanese",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ": 岸野 末利加, ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Kishino",
       "pos": "NNP",
       "isStopWord": false,
       "isPunctuation": false
@@ -39,7 +63,67 @@
       "isPunctuation": false
     },
     {
-      "text": "was",
+      "text": "Marika",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "; ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "born",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "July",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "16",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "1971",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ") ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "is",
       "pos": "VB",
       "isStopWord": true,
       "isPunctuation": false
@@ -63,7 +147,7 @@
       "isPunctuation": false
     },
     {
-      "text": "Polish",
+      "text": "Japanese",
       "pos": "NNP",
       "isStopWord": false,
       "isPunctuation": false
@@ -75,92 +159,44 @@
       "isPunctuation": false
     },
     {
-      "text": "television",
+      "text": "composer",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "based",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "in",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Cologne",
       "pos": "NNP",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "channel",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "that",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "was",
-      "pos": "VB",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "launched",
-      "pos": "VB",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "on",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "April",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "1",
-      "pos": "CD",
       "isStopWord": false,
       "isPunctuation": false
     },
@@ -171,21 +207,21 @@
       "isPunctuation": true
     },
     {
-      "text": "1998",
-      "pos": "CD",
+      "text": "Germany",
+      "pos": "NNP",
       "isStopWord": false,
       "isPunctuation": false
     },
     {
-      "text": ". ",
+      "text": ".\n\n",
       "pos": "PUNCT",
       "isStopWord": false,
       "isPunctuation": true
     },
     {
-      "text": "The",
-      "pos": "NN",
-      "isStopWord": true,
+      "text": "Malika",
+      "pos": "NNP",
+      "isStopWord": false,
       "isPunctuation": false
     },
     {
@@ -195,8 +231,8 @@
       "isPunctuation": false
     },
     {
-      "text": "channel",
-      "pos": "NN",
+      "text": "Kishino",
+      "pos": "NNP",
       "isStopWord": false,
       "isPunctuation": false
     },
@@ -219,8 +255,8 @@
       "isPunctuation": false
     },
     {
-      "text": "available",
-      "pos": "JJ",
+      "text": "born",
+      "pos": "VB",
       "isStopWord": false,
       "isPunctuation": false
     },
@@ -231,7 +267,7 @@
       "isPunctuation": false
     },
     {
-      "text": "on",
+      "text": "in",
       "pos": "NN",
       "isStopWord": true,
       "isPunctuation": false
@@ -243,7 +279,7 @@
       "isPunctuation": false
     },
     {
-      "text": "Wizja",
+      "text": "Kyoto",
       "pos": "NNP",
       "isStopWord": false,
       "isPunctuation": false
@@ -255,7 +291,67 @@
       "isPunctuation": false
     },
     {
-      "text": "TV",
+      "text": "1971",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ". ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "She",
+      "pos": "PRP",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "studied",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "law",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "in",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Doshisha",
       "pos": "NNP",
       "isStopWord": false,
       "isPunctuation": false
@@ -267,32 +363,8 @@
       "isPunctuation": false
     },
     {
-      "text": "and",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "some",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "cable",
-      "pos": "NN",
+      "text": "University",
+      "pos": "NNP",
       "isStopWord": false,
       "isPunctuation": false
     },
@@ -303,115 +375,7 @@
       "isPunctuation": false
     },
     {
-      "text": "networks",
-      "pos": "VB",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": ". ",
-      "pos": "PUNCT",
-      "isStopWord": false,
-      "isPunctuation": true
-    },
-    {
-      "text": "The",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "channel",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "showed",
-      "pos": "VB",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "comedy",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "related",
-      "pos": "VB",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "programs",
-      "pos": "VB",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": ". ",
-      "pos": "PUNCT",
-      "isStopWord": false,
-      "isPunctuation": true
-    },
-    {
-      "text": "The",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "channel",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "also",
+      "text": "then",
       "pos": "RB",
       "isStopWord": true,
       "isPunctuation": false
@@ -423,200 +387,8 @@
       "isPunctuation": false
     },
     {
-      "text": "commissioned",
+      "text": "came",
       "pos": "VB",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "dubbed",
-      "pos": "VB",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "versions",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "of",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "some",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "programs",
-      "pos": "VB",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "such",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "as",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "South",
-      "pos": "NNP",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "Park",
-      "pos": "NNP",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": ", ",
-      "pos": "PUNCT",
-      "isStopWord": false,
-      "isPunctuation": true
-    },
-    {
-      "text": "Beavis",
-      "pos": "NNP",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "and",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "Butt-head",
-      "pos": "NNP",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": ", ",
-      "pos": "PUNCT",
-      "isStopWord": false,
-      "isPunctuation": true
-    },
-    {
-      "text": "and",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "others",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": ".\n\n",
-      "pos": "PUNCT",
-      "isStopWord": false,
-      "isPunctuation": true
-    },
-    {
-      "text": "In",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "addition",
-      "pos": "NN",
       "isStopWord": false,
       "isPunctuation": false
     },
@@ -639,20 +411,8 @@
       "isPunctuation": false
     },
     {
-      "text": "films",
-      "pos": "VB",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": ", ",
-      "pos": "PUNCT",
-      "isStopWord": false,
-      "isPunctuation": true
-    },
-    {
-      "text": "series",
-      "pos": "NN",
+      "text": "France",
+      "pos": "NNP",
       "isStopWord": false,
       "isPunctuation": false
     },
@@ -663,7 +423,7 @@
       "isPunctuation": false
     },
     {
-      "text": "and",
+      "text": "in",
       "pos": "NN",
       "isStopWord": true,
       "isPunctuation": false
@@ -675,19 +435,19 @@
       "isPunctuation": false
     },
     {
-      "text": "programs",
-      "pos": "VB",
+      "text": "1995",
+      "pos": "CD",
       "isStopWord": false,
       "isPunctuation": false
     },
     {
-      "text": ", ",
-      "pos": "PUNCT",
+      "text": " ",
+      "pos": "SPACE",
       "isStopWord": false,
-      "isPunctuation": true
+      "isPunctuation": false
     },
     {
-      "text": "the",
+      "text": "to",
       "pos": "NN",
       "isStopWord": true,
       "isPunctuation": false
@@ -699,79 +459,7 @@
       "isPunctuation": false
     },
     {
-      "text": "channel",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "also",
-      "pos": "RB",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "broadcast",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "events",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "from",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "concerts",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": ", ",
-      "pos": "PUNCT",
-      "isStopWord": false,
-      "isPunctuation": true
-    },
-    {
-      "text": "sporting",
+      "text": "study",
       "pos": "VB",
       "isStopWord": false,
       "isPunctuation": false
@@ -783,8 +471,32 @@
       "isPunctuation": false
     },
     {
-      "text": "events",
+      "text": "composition",
       "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ". ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "She",
+      "pos": "PRP",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "studied",
+      "pos": "VB",
       "isStopWord": false,
       "isPunctuation": false
     },
@@ -795,7 +507,7 @@
       "isPunctuation": false
     },
     {
-      "text": "and",
+      "text": "at",
       "pos": "NN",
       "isStopWord": true,
       "isPunctuation": false
@@ -807,9 +519,141 @@
       "isPunctuation": false
     },
     {
-      "text": "other",
+      "text": "École",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Normale",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "de",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Musique",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "de",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Paris",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "with",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Yoshihisa",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Taira",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "at",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Conservatoire",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "national",
       "pos": "JJ",
-      "isStopWord": true,
+      "isStopWord": false,
       "isPunctuation": false
     },
     {
@@ -819,7 +663,7 @@
       "isPunctuation": false
     },
     {
-      "text": "events",
+      "text": "supérieur",
       "pos": "NN",
       "isStopWord": false,
       "isPunctuation": false
@@ -831,7 +675,91 @@
       "isPunctuation": false
     },
     {
-      "text": "such",
+      "text": "de",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "musique",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "et",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "de",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "danse",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "de",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Lyon",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "with",
       "pos": "NN",
       "isStopWord": true,
       "isPunctuation": false
@@ -843,7 +771,43 @@
       "isPunctuation": false
     },
     {
-      "text": "as",
+      "text": "Robert",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Pascal",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "at",
       "pos": "NN",
       "isStopWord": true,
       "isPunctuation": false
@@ -867,7 +831,7 @@
       "isPunctuation": false
     },
     {
-      "text": "Golden",
+      "text": "Institute",
       "pos": "NNP",
       "isStopWord": false,
       "isPunctuation": false
@@ -879,7 +843,19 @@
       "isPunctuation": false
     },
     {
-      "text": "Globe",
+      "text": "for",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Research",
       "pos": "NNP",
       "isStopWord": false,
       "isPunctuation": false
@@ -891,7 +867,271 @@
       "isPunctuation": false
     },
     {
-      "text": "Award",
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Coordination",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Acoustic",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " (",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "IRCAM",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ") ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "with",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Philippe",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Leroux",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ". ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "She",
+      "pos": "PRP",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "moved",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "to",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Cologne",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "in",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "2006",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ". ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Her",
+      "pos": "PRP",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "works",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "are",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "published",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "by",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Edizioni",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Suvini",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Zerboni",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "in",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Milan",
       "pos": "NNP",
       "isStopWord": false,
       "isPunctuation": false
@@ -903,7 +1143,19 @@
       "isPunctuation": true
     },
     {
-      "text": "The",
+      "text": "Music",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "for",
       "pos": "NN",
       "isStopWord": true,
       "isPunctuation": false
@@ -915,7 +1167,19 @@
       "isPunctuation": false
     },
     {
-      "text": "channel",
+      "text": "choir",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "\n\n",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Music",
       "pos": "NN",
       "isStopWord": false,
       "isPunctuation": false
@@ -927,55 +1191,7 @@
       "isPunctuation": false
     },
     {
-      "text": "also",
-      "pos": "RB",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "carried",
-      "pos": "VB",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "sporting",
-      "pos": "VB",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "events",
-      "pos": "NN",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "since",
+      "text": "with",
       "pos": "NN",
       "isStopWord": true,
       "isPunctuation": false
@@ -987,28 +1203,10 @@
       "isPunctuation": false
     },
     {
-      "text": "the",
-      "pos": "NN",
-      "isStopWord": true,
-      "isPunctuation": false
-    },
-    {
-      "text": " ",
-      "pos": "SPACE",
-      "isStopWord": false,
-      "isPunctuation": false
-    },
-    {
-      "text": "beginning",
+      "text": "voice",
       "pos": "NN",
       "isStopWord": false,
       "isPunctuation": false
-    },
-    {
-      "text": ".",
-      "pos": "PUNCT",
-      "isStopWord": false,
-      "isPunctuation": true
     }
   ]
 }
