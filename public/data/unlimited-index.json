@@ -1,5 +1,40 @@
 [
   {
+    "id": "2026-09-13",
+    "difficulty": "challenging",
+    "category": "General"
+  },
+  {
+    "id": "2026-09-12",
+    "difficulty": "obscure",
+    "category": "General"
+  },
+  {
+    "id": "2026-09-11",
+    "difficulty": "obscure",
+    "category": "General"
+  },
+  {
+    "id": "2026-09-10",
+    "difficulty": "straightforward",
+    "category": "General"
+  },
+  {
+    "id": "2026-09-09",
+    "difficulty": "obscure",
+    "category": "General"
+  },
+  {
+    "id": "2026-09-08",
+    "difficulty": "obscure",
+    "category": "General"
+  },
+  {
+    "id": "2026-09-07",
+    "difficulty": "obscure",
+    "category": "General"
+  },
+  {
     "id": "2026-09-06",
     "difficulty": "challenging",
     "category": "General"
