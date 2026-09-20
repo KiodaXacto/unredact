@@ -1,0 +1,3402 @@
+{
+  "id": "2026-09-25",
+  "title": "Ibudilast",
+  "normalizedTitle": "ibudilast",
+  "alternateTitles": [
+    "ibudilast"
+  ],
+  "category": "General",
+  "difficulty": "obscure",
+  "firstLetter": "I",
+  "sampleSentence": "Ibudilast (development codes: AV-411 or MN-166) is an anti-inflammatory drug used mainly in Japan.",
+  "fullTextRaw": "Ibudilast (development codes: AV-411 or MN-166) is an anti-inflammatory drug used mainly in Japan. It has bronchodilator, vasodilator, and neuroprotective properties, and is mainly used in the treatment of asthma and stroke.\n\nIn Japan, ibudilast oral capsules are approved for the treatment of asthma, and for improvement of dizziness secondary to chronic cerebral circulation impairment associated with sequelae of cerebral infarction. Ibudilast ophthalmic solution is indicated for the treatment of allergic conjunctivitis and hay fever.\n\nIbudilast inhibits platelet aggregation, and may also be useful in the treatment of multiple sclerosis.\n\nIbudilast crosses the blood–brain barrier and suppresses glial cell activation. This activity has been shown to make ibudilast useful in the treatment of neuropathic pain and it not only enhances analgesia produced by opioid drugs, but also reduces the development of tolerance.\n\nIt may have some use reducing methamphetamine, opioid, and alcohol addiction.\n\nIbudilast crosses the blood–brain barrier, allowing central nervous system activity and suppression of glial cell activation.\n\nIbudilast acts as a phosphodiesterase inhibitor, inhibiting the PDE4 subtype to the greatest extent, but also showing significant inhibition of other PDE subtypes including PDE3, PDE10A, and PDE11.\n\nIbudilast has also been shown to act as an antagonist at the toll-like receptor 4 (TLR4). This likely plays a large part in its effects, specifically its synergy with opioid drugs, its anti-inflammatory effect, and its own painkilling effect. It is unknown if the PDE4-inhibiting properties potentiate the effects of TLR4 inactivation and/or vice versa, despite that some of their effects are shared, such as inflammation reducing properties.\n\nTLR4 antagonists theoretically reverse the increase in pain and inflammation caused by most TLR4 agonists, which includes alcohol and many opiate or opioid drugs.",
+  "categoriesList": [
+    "General"
+  ],
+  "tokens": [
+    {
+      "text": "Ibudilast",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " (",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "development",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "codes",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ": ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "AV-411",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "or",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "MN-166",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ") ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "is",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "an",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "anti-inflammatory",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "drug",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "used",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "mainly",
+      "pos": "RB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "in",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Japan",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ". ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "It",
+      "pos": "PRP",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "has",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "bronchodilator",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "vasodilator",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "neuroprotective",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "properties",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "is",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "mainly",
+      "pos": "RB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "used",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "in",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "treatment",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "of",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "asthma",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "stroke",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ".\n\n",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "In",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "Japan",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "ibudilast",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "oral",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "capsules",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "are",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "approved",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "for",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "treatment",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "of",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "asthma",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "for",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "improvement",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "of",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "dizziness",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "secondary",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "to",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "chronic",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "cerebral",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "circulation",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "impairment",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "associated",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "with",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "sequelae",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "of",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "cerebral",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "infarction",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ". ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Ibudilast",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "ophthalmic",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "solution",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "is",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "indicated",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "for",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "treatment",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "of",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "allergic",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "conjunctivitis",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "hay",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "fever",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ".\n\n",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Ibudilast",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "inhibits",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "platelet",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "aggregation",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "may",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "also",
+      "pos": "RB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "be",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "useful",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "in",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "treatment",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "of",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "multiple",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "sclerosis",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ".\n\n",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Ibudilast",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "crosses",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "blood",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "–",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "brain",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "barrier",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "suppresses",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "glial",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "cell",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "activation",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ". ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "This",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "activity",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "has",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "been",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "shown",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "to",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "make",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "ibudilast",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "useful",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "in",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "treatment",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "of",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "neuropathic",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "pain",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "it",
+      "pos": "PRP",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "not",
+      "pos": "RB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "only",
+      "pos": "RB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "enhances",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "analgesia",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "produced",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "by",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "opioid",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "drugs",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "but",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "also",
+      "pos": "RB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "reduces",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "development",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "of",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "tolerance",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ".\n\n",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "It",
+      "pos": "PRP",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "may",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "have",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "some",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "use",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "reducing",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "methamphetamine",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "opioid",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "alcohol",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "addiction",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ".\n\n",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Ibudilast",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "crosses",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "blood",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "–",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "brain",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "barrier",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "allowing",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "central",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "nervous",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "system",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "activity",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "suppression",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "of",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "glial",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "cell",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "activation",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ".\n\n",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Ibudilast",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "acts",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "as",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "a",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "phosphodiesterase",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "inhibitor",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "inhibiting",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "PDE4",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "subtype",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "to",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "greatest",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "extent",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "but",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "also",
+      "pos": "RB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "showing",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "significant",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "inhibition",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "of",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "other",
+      "pos": "JJ",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "PDE",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "subtypes",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "including",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "PDE3",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "PDE10A",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "PDE11",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ".\n\n",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "Ibudilast",
+      "pos": "NNP",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "has",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "also",
+      "pos": "RB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "been",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "shown",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "to",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "act",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "as",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "an",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "antagonist",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "at",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "toll-like",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "receptor",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "4",
+      "pos": "CD",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " (",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "TLR4",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "). ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "This",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "likely",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "plays",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "a",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "large",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "part",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "in",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "its",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "effects",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "specifically",
+      "pos": "RB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "its",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "synergy",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "with",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "opioid",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "drugs",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "its",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "anti-inflammatory",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "effect",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "its",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "own",
+      "pos": "JJ",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "painkilling",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "effect",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ". ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "It",
+      "pos": "PRP",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "is",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "unknown",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "if",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "PDE4-inhibiting",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "properties",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "potentiate",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "effects",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "of",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "TLR4",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "inactivation",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": "/",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "or",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "vice",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "versa",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "despite",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "that",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "some",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "of",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "their",
+      "pos": "PRP",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "effects",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "are",
+      "pos": "VB",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "shared",
+      "pos": "JJ",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "such",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "as",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "inflammation",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "reducing",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "properties",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ".\n\n",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "TLR4",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "antagonists",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "theoretically",
+      "pos": "RB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "reverse",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "the",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "increase",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "in",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "pain",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "inflammation",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "caused",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "by",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "most",
+      "pos": "JJ",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "TLR4",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "agonists",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ", ",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    },
+    {
+      "text": "which",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "includes",
+      "pos": "VB",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "alcohol",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "and",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "many",
+      "pos": "JJ",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "opiate",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "or",
+      "pos": "NN",
+      "isStopWord": true,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "opioid",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": " ",
+      "pos": "SPACE",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": "drugs",
+      "pos": "NN",
+      "isStopWord": false,
+      "isPunctuation": false
+    },
+    {
+      "text": ".",
+      "pos": "PUNCT",
+      "isStopWord": false,
+      "isPunctuation": true
+    }
+  ]
+}
